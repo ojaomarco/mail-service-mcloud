@@ -1,0 +1,453 @@
+<html>
+
+<head>
+    <style>
+        h1 {
+            font-size: 30px;
+            color: #fff;
+            text-transform: uppercase;
+            font-weight: 300;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        table {
+            width: 80%;
+            table-layout: auto;
+        }
+
+        thead {
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+
+        tbody {
+
+            height: 300px;
+            overflow-x: auto;
+            margin-top: 0px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        th {
+            padding: 10px 5px;
+            text-align: left;
+            font-weight: 500;
+            font-size: 15px;
+            color: #fff;
+            text-transform: uppercase;
+        }
+
+        td {
+            padding: 3px;
+            text-align: left;
+            vertical-align: middle;
+            font-weight: 300;
+            font-size: 15px;
+            color: #fff;
+            border-bottom: solid 1px rgba(255, 255, 255, 0.1);
+        }
+
+        section {
+            margin: 50px;
+        }
+
+        .tbl-content {
+            height: 300px;
+            overflow-x: auto;
+        }
+
+        /* follow me template */
+        .made-with-love {
+            margin-top: 40px;
+            padding: 10px;
+            clear: left;
+            text-align: center;
+            font-size: 10px;
+            font-family: arial;
+            color: #fff;
+        }
+
+        .made-with-love i {
+            font-style: normal;
+            color: #F50057;
+            font-size: 14px;
+            position: relative;
+            top: 2px;
+        }
+
+        .made-with-love a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .made-with-love a:hover {
+            text-decoration: underline;
+        }
+
+
+        /* for custom scrollbar for webkit browser*/
+
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        ::-webkit-scrollbar-track {
+            -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-weight: 300;
+            font-family: system-ui;
+            background-color: #0a1f3c;
+            color: white;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .title {
+            font-size: 36px;
+            text-align: center;
+        }
+
+        .summary {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+
+        .section {
+            padding: 20px;
+            background-color: #1c3b5f;
+        }
+
+        .section-card {
+            display: flex;
+            align-items: baseline;
+            justify-content: center;
+        }
+
+        .section-title {
+            margin-top: 15px;
+            font-size: 24px;
+            font-weight: 500;
+
+        }
+
+        .section-content {
+            font-size: 20px;
+            margin-top: 10px;
+        }
+
+        .big-number {
+            text-align: center;
+            font-size: 72px;
+            font-weight: 500;
+        }
+
+        .card {
+            width: 50%;
+            padding: 5px;
+            background-color: #3f5b81;
+            margin: 2px;
+            border-radius: 2%;
+        }
+
+        .text-card {
+            font-size: 16px;
+            text-align: center;
+        }
+
+        .flex {
+            display: flex;
+            align-items: baseline;
+            justify-content: center;
+        }
+    </style>
+
+    <script>
+        $(window).on("load resize ", function () {
+            var scrollWidth = $('.tbl-content').width() - $('.tbl-content table').width();
+            $('.tbl-header').css({ 'padding-right': scrollWidth });
+        }).resize();
+    </script>
+</head>
+
+<body>
+    <div class="container">
+
+
+
+        <div class="section">
+            <img src="https://i.upimg.com/0eg6EfQoR" width="200px"></img>
+            <div class="section-title">Olá, Fernando Carvalho.</div>
+            <div class="summary">Este é um email automático para informar sobre o status do seu equipamento Multipet com
+                o número de série 025.035.23-23.</div>
+
+            <div class="section-content ">
+
+                <div class="comparison ">Dados referentes as últimas 24 horas.</div>
+
+            </div>
+            <div class="section-card">
+                <div class="card">
+                    <div class="big-number">63530</div>
+                    <div class="text-card">Total de Garrafas Produzidas</div>
+                </div>
+                <div class="card">
+                    <div class='flex'>
+                        <div class="big-number">8103</div>
+                        <p>G/h</p>
+                    </div>
+                    <div class="text-card">Velocidade Média de Produção</div>
+                </div>
+            </div>
+            <div class="section-card">
+                <div class="card">
+                    <div class='flex'>
+                        <div class="big-number">6,4</div>
+                        <p>Bar</p>
+                    </div>
+                    <div class="text-card">Pressão Média Ar de Baixa</div>
+                </div>
+                <div class="card">
+                    <div class='flex'>
+                        <div class="big-number">28,3</div>
+                        <p>Bar</p>
+                    </div>
+                    <div class="text-card">Pressão Média Ar de Alta</div>
+                </div>
+            </div>
+            <div class="section-card">
+                <div class="card">
+                    <div class='flex'>
+                        <div class="big-number">109</div>
+                        <p>ºC</p>
+                    </div>
+                    <div class="text-card">Temperatura Média Coifa</div>
+                </div>
+
+            </div>
+        </div>
+        <div class="section ">
+
+            <div class="section-content section-card section-title">Tabela de Falhas</div>
+            <br>
+            <div align="center">
+                <div class="tbl-header">
+                    <table cellpadding="0" cellspacing="0" border="0">
+                        <thead>
+                            <tr>
+                                <th>Hora</th>
+                                <th>Descrição</th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+                <div class="tbl-content">
+                    <table class="dataframe">
+                        <tbody>
+                            <tr>
+                                <td>28/02 08:43</td>
+                                <td>Alerta: Torque da prensa acima do limite definido.</td>
+                            </tr>
+                            <tr>
+                                <td>28/02 10:53</td>
+                                <td>Alerta: falta de pré-forma na rampa.</td>
+                            </tr>
+                            <tr>
+                                <td>28/02 10:54</td>
+                                <td>Alerta: nível baixo de pré-forma na rampa.</td>
+                            </tr>
+                            <tr>
+                                <td>28/02 13:10</td>
+                                <td>Alerta: nível baixo de pré-forma na rampa.</td>
+                            </tr>
+                            <tr>
+                                <td>28/02 13:35</td>
+                                <td>Alerta: nível baixo de pré-forma na rampa.</td>
+                            </tr>
+                            <tr>
+                                <td>28/02 13:49</td>
+                                <td>Alerta: Pré forma travada verifique o alimentador</td>
+                            </tr>
+                            <tr>
+                                <td>28/02 13:51</td>
+                                <td>Alerta: nível baixo de pré-forma na rampa.</td>
+                            </tr>
+                            <tr>
+                                <td>28/02 14:14</td>
+                                <td>Alerta: falta de pré-forma na rampa.</td>
+                            </tr>
+                            <tr>
+                                <td>28/02 14:45</td>
+                                <td>Alerta: falta de pré-forma na rampa.</td>
+                            </tr>
+                            <tr>
+                                <td>28/02 14:45</td>
+                                <td>Alerta: nível baixo de pré-forma na rampa.</td>
+                            </tr>
+                            <tr>
+                                <td>28/02 15:15</td>
+                                <td>Alerta: nível baixo de pré-forma na rampa.</td>
+                            </tr>
+                            <tr>
+                                <td>28/02 16:22</td>
+                                <td>Alerta: nível baixo de pré-forma na rampa.</td>
+                            </tr>
+                            <tr>
+                                <td>28/02 16:30</td>
+                                <td>Alerta: falta de pré-forma na rampa.</td>
+                            </tr>
+                            <tr>
+                                <td>28/02 16:31</td>
+                                <td>Alerta: Pré forma travada verifique o alimentador</td>
+                            </tr>
+                            <tr>
+                                <td>28/02 16:47</td>
+                                <td>Alerta: nível baixo de pré-forma na rampa.</td>
+                            </tr>
+                            <tr>
+                                <td>28/02 16:55</td>
+                                <td>Alerta: falta de pré-forma na rampa.</td>
+                            </tr>
+                            <tr>
+                                <td>29/02 06:59</td>
+                                <td>Falha: parada por relé de fase, verifique a tensão do equipamento.</td>
+                            </tr>
+                            <tr>
+                                <td>29/02 06:59</td>
+                                <td>Alerta: Portas abertas.</td>
+                            </tr>
+                            <tr>
+                                <td>29/02 06:59</td>
+                                <td>Alerta: emergência da rampa detectada</td>
+                            </tr>
+                            <tr>
+                                <td>29/02 07:01</td>
+                                <td>StatusWord__PosicUp</td>
+                            </tr>
+                            <tr>
+                                <td>29/02 07:01</td>
+                                <td>StatusWord__Estira</td>
+                            </tr>
+                            <tr>
+                                <td>29/02 07:01</td>
+                                <td>Alerta: a mesa deve estar posicionada para o posicionador.</td>
+                            </tr>
+                            <tr>
+                                <td>29/02 07:01</td>
+                                <td>StatusWord__PosicDw</td>
+                            </tr>
+                            <tr>
+                                <td>29/02 07:01</td>
+                                <td>Falha: erro no drive do posicionador Superior.</td>
+                            </tr>
+                            <tr>
+                                <td>29/02 07:01</td>
+                                <td>Falha: erro no drive do posicionador Inferior.</td>
+                            </tr>
+                            <tr>
+                                <td>29/02 07:01</td>
+                                <td>Falha: erro no drive do forno.</td>
+                            </tr>
+                            <tr>
+                                <td>29/02 07:01</td>
+                                <td>Falha: erro no drive do estiramento.</td>
+                            </tr>
+                            <tr>
+                                <td>29/02 07:01</td>
+                                <td>Falha: erro no drive do cambotador.</td>
+                            </tr>
+                            <tr>
+                                <td>29/02 07:01</td>
+                                <td>Falha: erro no drive da régua.</td>
+                            </tr>
+                            <tr>
+                                <td>29/02 07:01</td>
+                                <td>F_Forno</td>
+                            </tr>
+                            <tr>
+                                <td>29/02 07:01</td>
+                                <td>Falha: erro no drive da Mesa.</td>
+                            </tr>
+                            <tr>
+                                <td>29/02 07:01</td>
+                                <td>PresComando_Baixa</td>
+                            </tr>
+                            <tr>
+                                <td>29/02 07:04</td>
+                                <td>Alerta: Torque da prensa acima do limite definido.</td>
+                            </tr>
+                            <tr>
+                                <td>29/02 07:04</td>
+                                <td>Alerta: nível baixo de pré-forma na rampa.</td>
+                            </tr>
+                            <tr>
+                                <td>29/02 07:04</td>
+                                <td>Alerta: pressão de sopro abaixo do limite definido.</td>
+                            </tr>
+                            <tr>
+                                <td>29/02 07:11</td>
+                                <td>Alerta: Pré forma travada verifique o alimentador</td>
+                            </tr>
+                            <tr>
+                                <td>29/02 07:27</td>
+                                <td>Alerta: Portas abertas.</td>
+                            </tr>
+                            <tr>
+                                <td>29/02 07:27</td>
+                                <td>Falha: parada por relé de fase, verifique a tensão do equipamento.</td>
+                            </tr>
+                            <tr>
+                                <td>29/02 07:27</td>
+                                <td>Alerta: emergência da rampa detectada</td>
+                            </tr>
+                            <tr>
+                                <td>29/02 07:28</td>
+                                <td>Alerta: Torque da prensa acima do limite definido.</td>
+                            </tr>
+                            <tr>
+                                <td>29/02 08:18</td>
+                                <td>Alerta: nível baixo de pré-forma na rampa.</td>
+                            </tr>
+                            <tr>
+                                <td>29/02 08:24</td>
+                                <td>Alerta: falta de pré-forma na rampa.</td>
+                            </tr>
+                            <tr>
+                                <td>29/02 09:19</td>
+                                <td>Alerta: Pré forma travada verifique o alimentador</td>
+                            </tr>
+                            <tr>
+                                <td>29/02 09:28</td>
+                                <td>Alerta: falta de pré-forma na rampa.</td>
+                            </tr>
+                            <tr>
+                                <td>29/02 09:28</td>
+                                <td>Alerta: nível baixo de pré-forma na rampa.</td>
+                            </tr>
+                            <tr>
+                                <td>29/02 09:53</td>
+                                <td>Alerta: nível baixo de pré-forma na rampa.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+
+</body>
+</html>

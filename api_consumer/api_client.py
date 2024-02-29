@@ -1,5 +1,7 @@
+from collections import defaultdict
 import requests
-from config.auth import BASE_URL, AUTH
+from datetime import datetime, timedelta
+from config.auth import BASE_URL, AUTH, BASE_URL_ISSUE
 
 class Client:
     def __init__(self):
@@ -10,7 +12,6 @@ class Client:
         response = requests.get(self.url, auth=AUTH)
         data = response.json()
         for x in response.json()['results']: data_list.append(x) 
-
         while data['next'] is not None:
             print("Next page found, downloading", data['next'])
             response = requests.get(data['next'], auth=AUTH)
@@ -30,25 +31,14 @@ class Client:
            data = response.json()
            data_list.append(data['results'])
         return data_list
-        
-if __name__ == '__main__':
-    client = Client('aa')
-    client.get_data()
-"""
-    {
-         "id":"7256eb75-f438-46dc-b364-93b97aeecd78",
-         "name":"Maq México 8000",
-         "description":"8000 México",
-         "status":3,
-         "is_running":0,
-         "serial_number":"025.075.09-23",
-         "node":{
-            "company":{
-               "id":"aa158aad-bd50-43db-a585-2e912a12f7da",
-               "name":"Multipet",
-            }
-         },
-         "model":{     
-            "name":"Sopradora Multipet 8.000",
-         }
-      }"""
+
+    def get_all_issues(self):
+        final_time = datetime.now().isoformat()
+        initial_time = (datetime.now()-timedelta(hours=24)).isoformat()
+        response = requests.get(f'{BASE_URL_ISSUE}?time_from={initial_time}Z&time_to={final_time}Z&limit=-1', auth=AUTH)
+        data = response.json()
+        issues_by_device = defaultdict(list)
+        for issue in data:
+            issues_by_device[issue["device"]].append(issue)
+        return issues_by_device
+    
