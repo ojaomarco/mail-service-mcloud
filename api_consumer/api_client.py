@@ -1,5 +1,6 @@
 from collections import defaultdict
 import requests
+import logging
 from datetime import datetime, timedelta
 from config.auth import BASE_URL, AUTH, BASE_URL_ISSUE
 
@@ -8,31 +9,34 @@ class Client:
         self.url = f'{BASE_URL}'
     
     def get_all_devices(self):
+        logging.info('[api_client] Requesting all devices.')
         data_list = []
         response = requests.get(self.url, auth=AUTH)
         data = response.json()
         for x in response.json()['results']: data_list.append(x) 
         while data['next'] is not None:
-            print("Next page found, downloading", data['next'])
             response = requests.get(data['next'], auth=AUTH)
             data = response.json()
             for x in response.json()['results']: data_list.append(x) 
 
+        logging.info('[api_client] All devices requested successfully.')
         return(data_list)
     
     def get_all_users(self):
+        logging.info('[api_client] Requesting all users.')
         data_list = []
         response = requests.get('http://multipetcloud.com.br/api/users', auth=AUTH)
         data = response.json()
         data_list.append(response.json()['results'])
         while data['next'] is not None:
-           print("Next page found, downloading", data['next'])
            response = requests.get(data['next'], auth=AUTH)
            data = response.json()
            data_list.append(data['results'])
+        logging.info('[api_client] All users requested successfully.')
         return data_list
-
+    
     def get_all_issues(self):
+        logging.info('[api_client] Requesting all issues.')
         final_time = datetime.now().isoformat()
         initial_time = (datetime.now()-timedelta(hours=24)).isoformat()
         response = requests.get(f'{BASE_URL_ISSUE}?time_from={initial_time}Z&time_to={final_time}Z&limit=-1', auth=AUTH)
@@ -40,5 +44,7 @@ class Client:
         issues_by_device = defaultdict(list)
         for issue in data:
             issues_by_device[issue["device"]].append(issue)
+        logging.info('[api_client] All issues requested successfully.')
         return issues_by_device
     
+

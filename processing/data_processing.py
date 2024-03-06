@@ -28,6 +28,8 @@ class Processer():
                                                 'info_data' : info_data,
                                                 'issues' : self.process_issues(self.all_issues.get(obj_device.id_device, [])) if info_data else None
                                                 }
+            logging.info(f'{[obj_device.id_device]} Device has all data.') if info_data else logging.info(f'{[obj_device.id_device]} Device has not all data. Device offline. {obj_device.is_running}')
+
         return(processed_data)
     
     def process_issues(self, issues):
@@ -56,6 +58,6 @@ class Processer():
             result.columns = ["Hora",  "Nome"]
             return result 
         except:
-            logging.error('Erro ao obter alarmes')
+            logging.error('Error: process issues failed. Device offline.')
 
 

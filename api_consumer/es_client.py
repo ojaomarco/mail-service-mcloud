@@ -149,6 +149,8 @@ class ElasticCustomCLient(Elasticsearch):
             avg_press_alta = sum(sum_press_alta) / len(sum_press_alta)
             prod_total = last_prod_total - first_prod_total
             avg_prod_hora = sum(sum_prod_hora) / len(sum_prod_hora)
+            print(device.name ,last_prod_total, first_prod_total, prod_total)
+
             return ({'horas_rodando':str(horas_rodando), 'avg_prod_hora': avg_prod_hora, 'avg_press_alta':avg_press_alta, 'avg_press_baixa':avg_press_baixa, 'prod_total':prod_total, 'avg_temp_coifa':avg_temp_coifa})
         except:
             print('erro ao obter dados do dispositivo')

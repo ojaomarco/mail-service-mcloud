@@ -1,12 +1,21 @@
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
 
 BASE_URL = 'http://multipetcloud.com.br/api/devices/'
-AUTH =('ojaomarco', 'Jo@o1501')
 BASE_URL_ISSUE = 'https://multipetcloud.com.br/api/issue-inspections/'
 
-subject = "Email Subject"
-body = "This is the body of the text message"
-sender = "ojaomarco@gmail.com"
-recipients = ["automacaomultipet01@gmail.com"]
-password = "ahjz gpjr gtcd iuix"
-text = "Multipet Sopradoras"
+# AUTH =('ojaomarco', 'Jo@o1501')
+# ELASTIC_AUTH = ('multipet', 'multipet@2022#$')
 
+# SENDER = "multipetmcloud.noreply@gmail.com"
+# PASSWORD = "terf fcom bfii tkyj"
+# text = "Multipet Sopradoras"
+
+AUTH =(os.getenv('MCLOUD_USER'), os.getenv('MCLOUD_PWD'))
+ELASTIC_AUTH = (os.getenv('ELASTIC_USER'), os.getenv('ELASTIC_PWD'))
+
+SENDER = os.getenv('MAIL_USER')
+PASSWORD = os.getenv('MAIL_PWD')
