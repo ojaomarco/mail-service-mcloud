@@ -7066,3 +7066,66 @@
 2024-03-06 10:35:37 INFO [4cde55e4-81bd-4689-909f-c6c8c68ddec9] Dados para envio do email obtidos com sucesso.
 2024-03-06 10:35:41 INFO Task 'main' status: 'success'
 2024-03-06 13:40:56 INFO Shutdown completed. Good bye.
+2024-03-06 15:28:40 INFO [api_client] Requesting all devices.
+2024-03-06 15:28:44 INFO [api_client] All devices requested successfully.
+2024-03-06 15:28:44 INFO [api_client] Requesting all users.
+2024-03-06 15:28:48 INFO [api_client] All users requested successfully.
+2024-03-06 15:28:48 INFO [api_client] Requesting all issues.
+2024-03-06 15:28:51 INFO [api_client] All issues requested successfully.
+2024-03-06 15:28:52 INFO POST http://167.114.191.57:9200/_msearch [status:200 duration:1.045s]
+2024-03-06 15:28:52 INFO ['4cde55e4-81bd-4689-909f-c6c8c68ddec9'] Device has all data.
+2024-03-06 15:28:53 INFO POST http://167.114.191.57:9200/_msearch [status:200 duration:1.621s]
+2024-03-06 15:28:54 INFO ['bdec8fd8-e5a6-4390-8333-91b1b40cd7ef'] Device has all data.
+2024-03-06 15:28:54 INFO POST http://167.114.191.57:9200/_msearch [status:200 duration:0.485s]
+2024-03-06 15:28:54 INFO ['451f23e9-3227-47fd-939c-154bf4c46366'] Device has all data.
+2024-03-06 15:28:54 INFO POST http://167.114.191.57:9200/_msearch [status:200 duration:0.155s]
+2024-03-06 15:28:54 INFO ['c6a16cea-a37b-4918-8d68-595f1f1387bb'] Device has not all data. Device offline. 0
+2024-03-06 15:28:54 INFO POST http://167.114.191.57:9200/_msearch [status:200 duration:0.154s]
+2024-03-06 15:28:54 INFO ['847332d4-134c-41d3-8619-a94093d0b5f6'] Device has not all data. Device offline. 0
+2024-03-06 15:28:55 INFO POST http://167.114.191.57:9200/_msearch [status:200 duration:0.157s]
+2024-03-06 15:28:55 INFO ['5fa3361a-f80e-4965-bb27-c074517cb82f'] Device has not all data. Device offline. 0
+2024-03-06 15:28:55 INFO POST http://167.114.191.57:9200/_msearch [status:200 duration:0.155s]
+2024-03-06 15:28:55 INFO ['0618a0c1-3149-4bbf-b566-a5d75a17232a'] Device has not all data. Device offline. 0
+2024-03-06 15:28:55 INFO POST http://167.114.191.57:9200/_msearch [status:200 duration:0.154s]
+2024-03-06 15:28:55 INFO ['7256eb75-f438-46dc-b364-93b97aeecd78'] Device has not all data. Device offline. 0
+2024-03-06 15:28:55 INFO POST http://167.114.191.57:9200/_msearch [status:200 duration:0.153s]
+2024-03-06 15:28:55 INFO ['50beab0e-e3a0-461e-b384-d7be328702e6'] Device has not all data. Device offline. 2
+2024-03-06 15:28:55 INFO POST http://167.114.191.57:9200/_msearch [status:200 duration:0.186s]
+2024-03-06 15:28:55 INFO ['a021acce-0b15-45e6-9924-e904e717748c'] Device has all data.
+2024-03-06 15:28:55 INFO POST http://167.114.191.57:9200/_msearch [status:200 duration:0.171s]
+2024-03-06 15:28:55 INFO ['53595754-5637-416d-81b8-c9c4b4c2d082'] Device has not all data. Device offline. 2
+2024-03-06 15:28:56 INFO POST http://167.114.191.57:9200/_msearch [status:200 duration:0.155s]
+2024-03-06 15:28:56 INFO ['c900f927-4efa-44ea-a5f2-e8304c7672cf'] Device has not all data. Device offline. 2
+2024-03-06 15:28:56 INFO POST http://167.114.191.57:9200/_msearch [status:200 duration:0.340s]
+2024-03-06 15:28:56 INFO ['fd739ea3-f348-4b35-a4e0-9a46329e59b6'] Device has all data.
+2024-03-06 15:28:56 INFO POST http://167.114.191.57:9200/_msearch [status:200 duration:0.150s]
+2024-03-06 15:28:56 INFO ['91b1f407-9d91-4913-881a-457ad4c86475'] Device has not all data. Device offline. 2
+2024-03-06 15:28:56 INFO POST http://167.114.191.57:9200/_msearch [status:200 duration:0.184s]
+2024-03-06 15:28:56 INFO ['a021acce-0b15-45e6-9924-e904e717748c'] Device has all data.
+2024-03-06 15:28:58 INFO POST http://167.114.191.57:9200/_msearch [status:200 duration:1.501s]
+2024-03-06 15:28:58 INFO ['5579bf4d-beee-4c18-ab15-996faa8743db'] Device has all data.
+2024-03-06 15:28:58 INFO POST http://167.114.191.57:9200/_msearch [status:200 duration:0.160s]
+2024-03-06 15:28:58 INFO ['e98809ff-6ed0-4742-b051-2ebd18406fbc'] Device has not all data. Device offline. 2
+2024-03-06 15:28:58 INFO POST http://167.114.191.57:9200/_msearch [status:200 duration:0.153s]
+2024-03-06 15:28:58 INFO ['50beab0e-e3a0-461e-b384-d7be328702e6'] Device has not all data. Device offline. 2
+2024-03-06 15:28:59 INFO POST http://167.114.191.57:9200/_msearch [status:200 duration:0.302s]
+2024-03-06 15:28:59 INFO ['8fe532d8-0d2b-4a63-b879-6a85d36da7b1'] Device has all data.
+2024-03-06 15:28:59 INFO POST http://167.114.191.57:9200/_msearch [status:200 duration:0.156s]
+2024-03-06 15:28:59 INFO ['07581d3e-2126-4042-aa76-993d7e0f9db2'] Device has not all data. Device offline. 2
+2024-03-06 15:28:59 INFO POST http://167.114.191.57:9200/_msearch [status:200 duration:0.151s]
+2024-03-06 15:28:59 INFO ['07581d3e-2126-4042-aa76-993d7e0f9db2'] Device has not all data. Device offline. 2
+2024-03-06 15:28:59 INFO [4cde55e4-81bd-4689-909f-c6c8c68ddec9] Dados para envio do email obtidos com sucesso.
+2024-03-06 15:29:04 WARNING [c6a16cea-a37b-4918-8d68-595f1f1387bb] Dados para envio do email não foram obtidos com sucesso
+2024-03-06 15:29:04 WARNING [0618a0c1-3149-4bbf-b566-a5d75a17232a] Dados para envio do email não foram obtidos com sucesso
+2024-03-06 15:29:04 WARNING [7256eb75-f438-46dc-b364-93b97aeecd78] Dados para envio do email não foram obtidos com sucesso
+2024-03-06 15:29:04 WARNING [7256eb75-f438-46dc-b364-93b97aeecd78] Dados para envio do email não foram obtidos com sucesso
+2024-03-06 15:29:04 WARNING [7256eb75-f438-46dc-b364-93b97aeecd78] Dados para envio do email não foram obtidos com sucesso
+2024-03-06 15:29:04 WARNING [7256eb75-f438-46dc-b364-93b97aeecd78] Dados para envio do email não foram obtidos com sucesso
+2024-03-06 15:29:04 WARNING [7256eb75-f438-46dc-b364-93b97aeecd78] Dados para envio do email não foram obtidos com sucesso
+2024-03-06 15:29:04 WARNING [7256eb75-f438-46dc-b364-93b97aeecd78] Dados para envio do email não foram obtidos com sucesso
+2024-03-06 15:29:04 WARNING [7256eb75-f438-46dc-b364-93b97aeecd78] Dados para envio do email não foram obtidos com sucesso
+2024-03-06 15:29:04 WARNING [50beab0e-e3a0-461e-b384-d7be328702e6] Dados para envio do email não foram obtidos com sucesso
+2024-03-06 15:29:04 INFO [5579bf4d-beee-4c18-ab15-996faa8743db] Dados para envio do email obtidos com sucesso.
+2024-03-06 15:29:08 INFO [8fe532d8-0d2b-4a63-b879-6a85d36da7b1] Dados para envio do email obtidos com sucesso.
+2024-03-06 15:29:11 INFO Task 'main' status: 'success'
+2024-03-06 15:35:48 INFO Shutdown completed. Good bye.

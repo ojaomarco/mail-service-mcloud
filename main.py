@@ -29,7 +29,6 @@ def main():
     processer = Processer(client, es_client)
     Sender.send_status(processer=processer)
 
-
 if __name__ == "__main__":
     app.run()
-    
+   
