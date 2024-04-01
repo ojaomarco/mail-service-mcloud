@@ -60,4 +60,3 @@ class Processer():
         except:
             logging.error('Error: process issues failed. Device offline.')
 
-
