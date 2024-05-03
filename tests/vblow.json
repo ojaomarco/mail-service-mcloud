@@ -1,0 +1,5822 @@
+{
+    "coils": [
+      {
+        "Name": "Fault__DiFault_Forn",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 0,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Fault__DiFault_Mesa",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Fault__DiFault_Camb",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 2,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Fault__DiFault_Posi",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 3,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Fault__DiFault_Regu",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 4,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Fault__DiFault_Pren",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 5,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Fault__DiFault_Esti",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 6,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Fault__StFault_Forn",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 7,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Fault__StFault_Mesa",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 127,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Fault__StFault_Camb",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 247,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Fault__StFault_Posi",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 367,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Fault__StFault_Regu",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 487,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Fault__StFault_Pren",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 607,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Fault__StFault_Esti",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 727,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "diCicloGraxa",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 847,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "mcForn__ActPos",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 848,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "mcForn__Torque1",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 850,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "mcForn__Torque2",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 852,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "mcMesa__ActPos",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 854,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "mcMesa__Torque1",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 856,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "mcMesa__Torque2",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 858,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "mcCamb__ActPos",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 860,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "mcCamb__Torque1",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 862,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "mcCamb__Torque2",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 864,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "mcPosi__ActPos",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 866,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "mcPosi__Torque1",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 868,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "mcPosi__Torque2",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 870,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "mcRegu__ActPos",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 872,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "mcRegu__Torque1",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 874,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "mcRegu__Torque2",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 876,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "mcPren__ActPos",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 878,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "mcPren__Torque1",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 880,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "mcPren__Torque2",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 882,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "mcEsti__ActPos",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 884,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "mcEsti__Torque1",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 886,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "mcEsti__Torque2",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 888,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "lrPos__MesaForn",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 890,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "lrPos__MesaPosi",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 892,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "lrPos__CambInicio",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 894,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "lrPos__CambForno",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 896,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "lrPos__CambPosi",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 898,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "lrPos__PosiCamb",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 900,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "lrPos__PosiRegu",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 902,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "lrPos__ReguPosi",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 904,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "lrPos__ReguPren",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 906,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "lrPos__PrenOp",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 908,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "lrPos__PrenCl",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 910,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "lrPos__EstiAjuste",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 912,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "lrPos__EstiFundoIHM",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 914,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "lrPos__EstiDw",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 916,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "lrPos__EstiUp",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 918,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "lrPos__EstiMax",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 920,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "lrPos__OffSet",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 922,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "CicloPrenCount",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 924,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "liCntProdParcial",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 926,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "liCntProdTotal",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 928,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Receita__Titulo",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 930,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Receita__Gramatura",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1050,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Receita__Volume",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1170,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Receita__Resina",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1290,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Receita__Bocal",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1410,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Auto__VelRolinho",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1530,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Auto__VelBatedor",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1531,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Tempo__Processo",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1532,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Tempo__ProcessoCalc",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1533,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Tempo__ProcessoAux",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1534,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Tempo__InicioPS1",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1535,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Tempo__InicioPS2",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1536,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Tempo__InicioPS3",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1537,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Tempo__InicioPS4",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1538,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Tempo__InicioPS5",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1539,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Tempo__InicioPS6",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1540,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Tempo__InicioPS7",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1541,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Tempo__InicioPS8",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1542,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Tempo__PreSopro",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1543,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Tempo__Sopro",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1544,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Tempo__Residencia",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1545,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Tempo__Regen",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1546,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Tempo__Alivio",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1547,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Tempo__InicioMax",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1548,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Tempo__EstiMove",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1549,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Tempo__PosiMove",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1550,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Tempo__ReguPosi",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1551,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Tempo__PurgaStra",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1552,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Tempo__PFSilo",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1553,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Tempo__PFRampa",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1554,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Tempo__ExpulsaRetardo",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1555,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Tempo__Expulsa1",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1556,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Tempo__Expulsa2",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1557,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Tempo__LinhaStop",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1558,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Tempo__PFt0",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1559,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Tempo__PFt1",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1560,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Tempo__PFinicio",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1561,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Tempo__PFpresopro",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1562,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Tempo__StandBY",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1563,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "man__PrenMilimetros",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1564,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Analog__Baixa",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1566,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Analog__Alta",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1568,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Analog__PSopro",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1570,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Analog__Reserv",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1572,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Analog__Pleno",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1574,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Analog__PAgua",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1576,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Analog__Coifa1",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1578,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Analog__Coifa2",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1580,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Analog__TempPF",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1582,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Analog__TempAgua",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1584,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Analog__FusoUp",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1586,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Analog__FusoDw",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1588,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Analog__Bocal1",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1590,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Analog__Bocal2",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1592,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Analog__Bocal3",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1594,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Analog__Bocal4",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1596,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Analog__Bocal5",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1598,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Analog__Bocal6",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1600,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Analog__Bocal7",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1602,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Analog__Bocal8",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1604,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Analog__Bocal1Track",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1606,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Analog__Bocal2Track",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1608,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Analog__Bocal3Track",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1610,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Analog__Bocal4Track",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1612,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Analog__Bocal5Track",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1614,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Analog__Bocal6Track",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1616,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Analog__Bocal7Track",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1618,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Analog__Bocal8Track",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1620,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Analog__Bocal1PSopro",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1622,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Analog__Bocal2PSopro",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1624,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Analog__Bocal3PSopro",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1626,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Analog__Bocal4PSopro",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1628,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Analog__Bocal5PSopro",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1630,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Analog__Bocal6PSopro",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1632,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Analog__Bocal7PSopro",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1634,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Analog__Bocal8PSopro",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1636,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Analog__Bocal1Sopro",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1638,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Analog__Bocal2Sopro",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1640,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Analog__Bocal3Sopro",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1642,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Analog__Bocal4Sopro",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1644,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Analog__Bocal5Sopro",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1646,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Analog__Bocal6Sopro",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1648,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Analog__Bocal7Sopro",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1650,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Analog__Bocal8Sopro",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1652,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Analog__Bocal1Residencia",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1654,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Analog__Bocal2Residencia",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1656,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Analog__Bocal3Residencia",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1658,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Analog__Bocal4Residencia",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1660,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Analog__Bocal5Residencia",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1662,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Analog__Bocal6Residencia",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1664,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Analog__Bocal7Residencia",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1666,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Analog__Bocal8Residencia",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1668,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Analog__Bocal1Alivio",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1670,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Analog__Bocal2Alivio",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1672,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Analog__Bocal3Alivio",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1674,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Analog__Bocal4Alivio",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1676,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Analog__Bocal5Alivio",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1678,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Analog__Bocal6Alivio",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1680,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Analog__Bocal7Alivio",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1682,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Analog__Bocal8Alivio",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1684,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Analog__Bocal1Regen",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1686,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Analog__Bocal2Regen",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1688,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Analog__Bocal3Regen",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1690,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Analog__Bocal4Regen",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1692,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Analog__Bocal5Regen",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1694,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Analog__Bocal6Regen",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1696,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Analog__Bocal7Regen",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1698,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Analog__Bocal8Regen",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1700,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Analog__Bocal1PSoproAVG",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1702,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Analog__Bocal2PSoproAVG",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1704,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Analog__Bocal3PSoproAVG",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1706,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Analog__Bocal4PSoproAVG",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1708,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Analog__Bocal5PSoproAVG",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1710,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Analog__Bocal6PSoproAVG",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1712,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Analog__Bocal7PSoproAVG",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1714,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Analog__Bocal8PSoproAVG",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1716,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Analog__Bocal1SoproAVG",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1718,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Analog__Bocal2SoproAVG",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1720,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Analog__Bocal3SoproAVG",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1722,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Analog__Bocal4SoproAVG",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1724,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Analog__Bocal5SoproAVG",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1726,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Analog__Bocal6SoproAVG",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1728,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Analog__Bocal7SoproAVG",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1730,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Analog__Bocal8SoproAVG",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1732,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Analog__Bocal1ResidenciaAVG",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1734,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Analog__Bocal2ResidenciaAVG",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1736,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Analog__Bocal3ResidenciaAVG",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1738,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Analog__Bocal4ResidenciaAVG",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1740,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Analog__Bocal5ResidenciaAVG",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1742,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Analog__Bocal6ResidenciaAVG",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1744,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Analog__Bocal7ResidenciaAVG",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1746,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Analog__Bocal8ResidenciaAVG",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1748,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Analog__Bocal1AlivioAVG",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1750,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Analog__Bocal2AlivioAVG",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1752,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Analog__Bocal3AlivioAVG",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1754,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Analog__Bocal4AlivioAVG",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1756,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Analog__Bocal5AlivioAVG",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1758,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Analog__Bocal6AlivioAVG",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1760,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Analog__Bocal7AlivioAVG",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1762,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Analog__Bocal8AlivioAVG",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1764,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Analog__Bocal1RegenAVG",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1766,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Analog__Bocal2RegenAVG",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1768,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Analog__Bocal3RegenAVG",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1770,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Analog__Bocal4RegenAVG",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1772,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Analog__Bocal5RegenAVG",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1774,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Analog__Bocal6RegenAVG",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1776,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Analog__Bocal7RegenAVG",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1778,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Analog__Bocal8RegenAVG",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1780,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Analog__Consumption",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1782,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Analog__PressureP2",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1784,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Analog__Status",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1786,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Auto__AlimentaPosIN",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1788,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Auto__AlimentaPosOut",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1790,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Auto__VelSilo",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1792,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Auto__VelCoifa",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1793,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Auto__VelRolinho",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1794,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Auto__VelBatedor",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1795,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Auto__PrenLubrifica",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1796,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Auto__SetPointTemp",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1798,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Auto__ProdHora",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1800,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Auto__ReguTorque2",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1802,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Auto__PrenTorque1",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1804,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Auto__PrenTorque2",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1806,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Auto__PressAltaMin",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1808,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Auto__PressAltaMax",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1810,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Auto__ButtonPF12_1",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1812,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Auto__ButtonPF12_2",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1813,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Auto__ButtonPF12_3",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1814,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Auto__ButtonPF12_4",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1815,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Auto__ButtonPF12_5",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1816,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Auto__ButtonPF12_6",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1817,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Auto__ButtonPF12_7",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1818,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Auto__ButtonPF12_8",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1819,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Auto__ButtonPF12_9",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1820,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Auto__ButtonPF34_1",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1821,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Auto__ButtonPF34_2",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1822,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Auto__ButtonPF34_3",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1823,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Auto__ButtonPF34_4",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1824,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Auto__ButtonPF34_5",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1825,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Auto__ButtonPF34_6",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1826,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Auto__ButtonPF34_7",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1827,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Auto__ButtonPF34_8",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1828,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Auto__ButtonPF34_9",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1829,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Auto__ButtonPF57_1",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1830,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Auto__ButtonPF57_2",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1831,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Auto__ButtonPF57_3",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1832,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Auto__ButtonPF57_4",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1833,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Auto__ButtonPF57_5",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1834,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Auto__ButtonPF57_6",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1835,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Auto__ButtonPF57_7",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1836,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Auto__ButtonPF57_8",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1837,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Auto__ButtonPF57_9",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1838,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Auto__ButtonF_1",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1839,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Auto__ButtonF_2",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1840,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Auto__ButtonF_3",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1841,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Auto__ButtonF_4",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1842,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Auto__ButtonF_5",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1843,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Auto__ButtonF_6",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1844,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Auto__ButtonF_7",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1845,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Auto__ButtonF_8",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1846,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Auto__ButtonF_9",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1847,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Auto__lrF_1",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1866,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Auto__lrF_2",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1868,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Auto__lrF_3",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1870,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Auto__lrF_4",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1872,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Auto__lrF_5",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1874,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Auto__lrF_6",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1876,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Auto__lrF_7",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1878,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Auto__lrF_8",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1880,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Auto__lrF_9",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1882,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Auto__diPerfil",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1884,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Auto__diPerfilStandBY",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1885,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Auto__diPerfilAjuste",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1886,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Auto__InputSignal",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1887,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Auto__NumSamples",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1889,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Auto__Idealtemp",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1890,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Auto__EstiPoint10",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1891,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Auto__BocalEstouroResetCount",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1911,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Auto__TempPFMedia",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1913,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Auto__diPerfilUse",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1915,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Bocal1EstouroCount",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1893,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Bocal2EstouroCount",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1895,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Bocal3EstouroCount",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1897,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Bocal4EstouroCount",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1899,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Bocal5EstouroCount",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1901,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Bocal6EstouroCount",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1903,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Bocal7EstouroCount",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1905,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Bocal8EstouroCount",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1907,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "BocalEstouroTotalCount",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1909,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "FornoFuncionandoMinutos",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1925,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "FornoFuncionandoHoras",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1926,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "CambFuncionandoMinutos",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1927,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "CambFuncionandoHoras",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1928,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "PosicFuncionandoMinutos",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1929,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "PosicFuncionandoHoras",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1930,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "ReguaFuncionandoMinutos",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1917,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "ReguaFuncionandoHoras",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1918,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "PrensaFuncionandoMinutos",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1919,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "PrensaFuncionandoHoras",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1920,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "EstiraFuncionandoMinutos",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1921,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "EstiraFuncionandoHoras",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1922,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "MesaFuncionandoMinutos",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1923,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "MesaFuncionandoHoras",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1924,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Vprog",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1931,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "mcPren__CorrentFB",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1933,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Auto__lrPF12_1",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1934,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Auto__lrPF12_2",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1936,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Auto__lrPF12_3",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1938,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Auto__lrPF12_4",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1940,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Auto__lrPF12_5",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1942,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Auto__lrPF12_6",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1944,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Auto__lrPF12_7",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1946,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Auto__lrPF12_8",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1948,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Auto__lrPF12_9",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1950,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Auto__lrPF34_1",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1952,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Auto__lrPF34_2",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1954,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Auto__lrPF34_3",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1956,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Auto__lrPF34_4",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1958,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Auto__lrPF34_5",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1960,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Auto__lrPF34_6",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1962,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Auto__lrPF34_7",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1964,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Auto__lrPF34_8",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1966,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Auto__lrPF34_9",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1968,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Auto__lrPF57_1",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1970,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Auto__lrPF57_2",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1972,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Auto__lrPF57_3",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1974,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Auto__lrPF57_4",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1976,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Auto__lrPF57_5",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1978,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Auto__lrPF57_6",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1980,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Auto__lrPF57_7",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1982,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Auto__lrPF57_8",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1984,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Auto__lrPF57_9",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1986,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Auto__ProdHoraEstimada",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1988,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Tempo__LinhaDescarrega",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1990,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "Tempo__LinhaComporta",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1991,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "iCarregaTelaIHM",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1992,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "tmAgitaDesligado",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1993,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      },
+      {
+        "Name": "tmAgitaLigado",
+        "Size": "1",
+        "DataType": "BIT",
+        "Address_1": 1994,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "BIT"
+      }
+    ],
+    "holding_registers": [
+      {
+        "Name": "Alerta__SobretorquePrensaFecha",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 489,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "IOs__DI_CmdSiloOFF",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 1,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "IOs__DI_PFnaRampa",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 2,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "IOs__DI_PFNoForno",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 3,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "IOs__DI_PFPreForno",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 4,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "IOs__DI_PFSaidaForno",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 5,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "IOs__DI_CameForno",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 6,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "IOs__DI_SensorForno",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 7,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "IOs__DI_PFTorta1",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 8,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "IOs__DI_PFTorta2",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 9,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "IOs__DI_PFCaida1",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 10,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "IOs__DI_PFCaida2",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 11,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "IOs__DI_CambForn",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 12,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "IOs__DI_CambPosi",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 13,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "IOs__DI_SensPosic",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 14,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "IOs__DI_PosiRec_01",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 15,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "IOs__DI_PosiRec_02",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 16,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "IOs__DI_PosiRec_03",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 17,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "IOs__DI_PosiRec_04",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 18,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "IOs__DI_PosiRec_05",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 19,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "IOs__DI_PosiRec_06",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 20,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "IOs__DI_PosiRec_07",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 21,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "IOs__DI_PosiRec_08",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 22,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "IOs__DI_PosiAvan_01",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 23,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "IOs__DI_PosiAvan_02",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 24,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "IOs__DI_PosiAvan_03",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 25,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "IOs__DI_PosiAvan_04",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 26,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "IOs__DI_PosiAvan_05",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 27,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "IOs__DI_PosiAvan_06",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 28,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "IOs__DI_PosiAvan_07",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 29,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "IOs__DI_PosiAvan_08",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 30,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "IOs__DI_ReguAber1",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 31,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "IOs__DI_ReguAber2",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 32,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "IOs__DI_BocaBaix1",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 33,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "IOs__DI_BocaBaix2",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 34,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "IOs__DI_EstiTopo",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 35,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "IOs__DI_LinhaStop",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 36,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "IOs__DI_NivOleo",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 37,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "IOs__DI_PresOleo",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 38,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "IOs__DI_CicloOleo",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 39,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "IOs__DI_PinFornBaixo",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 40,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "IOs__DI_FluxH2O",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 41,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "IOs__DI_RLFaltFase",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 42,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "IOs__DI_Emerg_Rele",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 43,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "IOs__DI_Emerg_Stop1",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 44,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "IOs__DI_Emerg_Stop2",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 45,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "IOs__DI_Emerg_Stop3",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 46,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "IOs__DI_PortAberta",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 47,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "IOs__DI_RampaEmergRele",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 48,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "IOs__DI_RampaEmergencia1",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 49,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "IOs__DI_RampaEmergencia2",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 50,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "IOs__DI_RampaCarenagem",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 51,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Alerta__LampQuebradaPF12_1",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 52,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Alerta__LampQuebradaPF12_2",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 53,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Alerta__LampQuebradaPF12_3",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 54,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Alerta__LampQuebradaPF12_4",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 55,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Alerta__LampQuebradaPF12_5",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 56,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Alerta__LampQuebradaPF12_6",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 57,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Alerta__LampQuebradaPF12_7",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 58,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Alerta__LampQuebradaPF12_8",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 59,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Alerta__LampQuebradaPF12_9",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 60,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Alerta__LampQuebradaPF34_1",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 61,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Alerta__LampQuebradaPF34_2",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 62,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Alerta__LampQuebradaPF34_3",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 63,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Alerta__LampQuebradaPF34_4",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 64,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Alerta__LampQuebradaPF34_5",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 65,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Alerta__LampQuebradaPF34_6",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 66,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Alerta__LampQuebradaPF34_7",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 67,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Alerta__LampQuebradaPF34_8",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 68,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Alerta__LampQuebradaPF34_9",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 69,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Alerta__LampQuebradaPF57_1",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 70,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Alerta__LampQuebradaPF57_2",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 71,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Alerta__LampQuebradaPF57_3",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 72,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Alerta__LampQuebradaPF57_4",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 73,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Alerta__LampQuebradaPF57_5",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 74,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Alerta__LampQuebradaPF57_6",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 75,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Alerta__LampQuebradaPF57_7",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 76,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Alerta__LampQuebradaPF57_8",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 77,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Alerta__LampQuebradaPF57_9",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 78,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Alerta__LampQuebradaF_1",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 79,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Alerta__LampQuebradaF_2",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 80,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Alerta__LampQuebradaF_3",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 81,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Alerta__LampQuebradaF_4",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 82,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Alerta__LampQuebradaF_5",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 83,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Alerta__LampQuebradaF_6",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 84,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Alerta__LampQuebradaF_7",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 85,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Alerta__LampQuebradaF_8",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 86,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Alerta__LampQuebradaF_9",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 87,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "IOs__DO_Sopro8",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 88,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "IOs__DO_Stra1",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 89,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "IOs__DO_Stra2",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 90,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "IOs__DO_Stra3",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 91,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "IOs__DO_Stra4",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 92,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "IOs__DO_Stra5",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 93,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "IOs__DO_Stra6",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 94,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "IOs__DO_Stra7",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 95,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "IOs__DO_Stra8",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 96,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "IOs__DO_DescSopro1",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 97,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "IOs__DO_DescSopro2",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 98,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "IOs__DO_DescSopro3",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 99,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "IOs__DO_DescSopro4",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 100,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "IOs__DO_DescSopro5",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 101,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "IOs__DO_DescSopro6",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 102,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "IOs__DO_DescSopro7",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 103,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "IOs__DO_DescSopro8",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 104,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "IOs__DO_Bocal1",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 105,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "IOs__DO_Bocal2",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 106,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "IOs__DO_Regu_Refrig",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 107,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "IOs__DO_Purga",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 108,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "IOs__DO_Batedor",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 109,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "IOs__DO_B_Oleo",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 110,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "IOs__DO_Sin_Verm",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 111,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "IOs__DO_Sin_Amar",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 112,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "IOs__DO_Sin_Verd",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 113,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "IOs__DO_Sonoro",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 114,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "IOs__DO_Carg_Pleno1",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 115,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "IOs__DO_Carg_Pleno2",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 116,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "IOs__DO_Desc_Pleno",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 117,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "IOs__DO_Expulsa_Garr1",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 118,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "IOs__DO_Expulsa_Garr2",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 119,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "IOs__DO_ControlStop",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 120,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "IOs__DO_Exaustores",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 121,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "IOs__DO_Sto",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 122,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "IOs__DO_PF12_1",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 123,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "IOs__DO_PF12_2",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 124,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "IOs__DO_PF12_3",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 125,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "IOs__DO_PF12_4",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 126,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "IOs__DO_PF12_5",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 127,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "IOs__DO_PF12_6",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 128,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "IOs__DO_PF12_7",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 129,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "IOs__DO_PF12_8",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 130,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "IOs__DO_PF12_9",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 131,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "IOs__DO_PF34_1",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 132,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "IOs__DO_PF34_2",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 133,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "IOs__DO_PF34_3",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 134,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "IOs__DO_PF34_4",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 135,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "IOs__DO_PF34_5",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 136,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "IOs__DO_PF34_6",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 137,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "IOs__DO_PF34_7",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 138,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "IOs__DO_PF34_8",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 139,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "IOs__DO_PF34_9",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 140,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "IOs__DO_PF57_1",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 141,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "IOs__DO_PF57_2",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 142,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "IOs__DO_PF57_3",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 143,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "IOs__DO_PF57_4",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 144,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "IOs__DO_PF57_5",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 145,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "IOs__DO_PF57_6",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 146,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "IOs__DO_PF57_7",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 147,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "IOs__DO_PF57_8",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 148,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "IOs__DO_PF57_9",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 149,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Auto__CicloVazio",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 150,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Auto__InicioCiclo",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 151,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Auto__Alimenta",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 152,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Auto__AlimentaAuto",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 153,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Auto__SensorQuedaOFF",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 154,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Auto__SiloOFF",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 155,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Auto__Descarrega",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 156,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Auto__DescarregaMan",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 157,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Auto__DescarregaAuto",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 158,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Auto__DescarregaON",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 159,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Auto__TesteTemp",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 160,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Auto__AqueceOFF",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 161,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Auto__Estira",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 162,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Auto__ExpulsaGarr",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 163,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Auto__Sopra",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 164,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Auto__PreSoproOFF",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 165,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Auto__MesaON",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 166,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Auto__FornoAquecido",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 167,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Auto__PurgaStra",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 168,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Auto__ContadorParcial",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 169,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Auto__PreSopra",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 170,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "boPerfilAuto",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 171,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Auto__StandBY",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 172,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Flag__MesaForn",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 173,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Flag__MesaPosi",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 174,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Flag__CambForn",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 175,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Flag__CambInic",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 176,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Flag__CambPosi",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 177,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Flag__PosiCamb",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 178,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Flag__PosiRegu",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 179,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Flag__ReguPosi",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 180,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Flag__ReguPren",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 181,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Flag__PrenOp",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 182,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Flag__PrenCl",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 183,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Flag__EstiUp",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 184,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Flag__EstiDw",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 185,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Flag__BootOk",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 186,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Flag__EixosON",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 187,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Flag__Referenciar",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 188,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Flag__HomeOK",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 189,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Flag__HomePneumatico",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 190,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Flag__FornHomeOK",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 191,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Flag__MesaPosiHomeOK",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 192,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Flag__MesaFornHomeOK",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 193,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Flag__CambHomeOK",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 194,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Flag__PosiHomeOK",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 195,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Flag__ReguHomeOK",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 196,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Flag__PrenHomeOK",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 197,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Flag__EstiHomeSupOK",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 198,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Flag__EstiHomeInfOK",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 199,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Flag__Manual",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 200,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Flag__ManualSair",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 201,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Flag__ManualSairOK",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 202,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Flag__ManualCondInicio",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 203,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Flag__Auto",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 204,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Flag__AutoMoveSincSair",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 205,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Flag__AutoSair",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 206,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Flag__AutoSairIHM",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 207,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Flag__AutoSairOK",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 208,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Flag__MesaON",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 209,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Flag__PosiAbreAuto",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 210,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Flag__PosiFechaAuto",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 211,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Flag__ReguRecuaAuto",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 212,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Flag__ReguAvanAuto",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 213,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Flag__PrenAbreAuto",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 214,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Flag__PrenFechaAuto",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 215,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Flag__EstiDesceAuto",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 216,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Flag__EstiSobeAuto",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 217,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Flag__MesaPosi_Rec",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 218,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Flag__MesaPosi_Ava",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 219,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Flag__CalcOffSet",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 220,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Flag__FornoVazio",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 221,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Flag__ReguaExecCicloFinal",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 222,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Flag__MovingForn",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 223,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Flag__MovingMesa",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 224,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Flag__MovingCamb",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 225,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Flag__MovingPosi",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 226,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Flag__MovingRegu",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 227,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Flag__MovingPren",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 228,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Flag__MovingEsti",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 229,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Flag__SoproBocal1",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 230,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Flag__SoproBocal2",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 231,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Flag__SoproBocal3",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 232,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Flag__SoproBocal4",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 233,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Flag__SoproBocal5",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 234,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Flag__SoproBocal6",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 235,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Flag__SoproBocal7",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 236,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Flag__SoproBocal8",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 237,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Flag__TrigBocalDesce",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 238,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Flag__TrigBocalBaixo",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 239,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Flag__TrigInicioPS",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 240,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Flag__TrigPreSopro",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 241,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Flag__TrigSopro",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 242,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Flag__TrigResidencia",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 243,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Flag__TrigRegen",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 244,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Flag__TrigAlivio",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 245,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Flag__TrigBocalSobe",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 246,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Flag__TrigAlimON",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 247,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Flag__TrigAlimOFF",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 248,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Flag__TrigSiloON",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 249,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Flag__TrigSiloOFF",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 250,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Flag__TrigMesa",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 251,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Flag__PFTesteTemp",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 252,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Flag__ResetMesa",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 253,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Flag__ResetCamb",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 254,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Flag__ResetPosi",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 255,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Flag__ResetRegu",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 256,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Flag__ResetPren",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 257,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Flag__ResetEsti",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 258,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Flag__CambFornClear",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 259,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Flag__CambPosiClear",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 260,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Flag__ChangeVel",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 261,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Fault__Forn",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 264,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Fault__Mesa",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 265,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Fault__Camb",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 266,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Fault__Posi",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 267,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Fault__Regu",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 268,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Fault__Pren",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 269,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Fault__Esti",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 270,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Fault__EmergenciaRele",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 271,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Fault__Emergencia1",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 272,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Fault__Emergencia2",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 273,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Fault__Emergencia3",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 274,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Fault__ReleFFase",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 275,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Fault__Portas",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 276,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Fault__Porta1",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 277,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Fault__Porta2",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 278,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Fault__Porta3",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 279,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Fault__Porta4",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 280,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Fault__Porta5",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 281,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Fault__Porta6",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 282,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Fault__Porta7",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 283,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Fault__Porta8",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 284,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Fault__Porta9",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 285,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Fault__Porta10",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 286,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Fault__Porta11",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 287,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Fault__Porta12",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 288,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Fault__Forno_Pino",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 289,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Fault__Forno_CameSensor",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 290,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Fault__Forno_PFTorna",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 291,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Fault__Forno_SegCamb",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 292,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Fault__FornoTorque",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 293,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Fault__FornoQuedaPF",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 294,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Fault__FornoQuedaForno",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 295,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Fault__Camb_Forno",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 296,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Fault__Camb_Posi",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 297,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Fault__Camb_Regu",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 298,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Fault__Camb_Sensor1",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 299,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Fault__Camb_Sensor2",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 300,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Fault__Posi_Camb",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 301,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Fault__Posi_Regu",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 302,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Fault__Posi_SensorRec",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 303,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Fault__Posi_SensorAva",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 304,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Fault__Regu_MesaPosi",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 305,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Fault__Regu_Camb",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 306,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Fault__Regu_Pren",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 307,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Fault__Regu_Esti",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 308,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Fault__Regu_Bocal",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 309,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Fault__EstiSensor",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 310,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Fault__Bocal1Dw",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 311,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Fault__Bocal2Dw",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 312,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Fault__Bocal1Up",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 313,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Fault__Bocal2Up",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 314,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Fault__PressaoComandoDw",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 315,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Fault__PressaoComandoUp",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 316,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Fault__GraxaCiclo",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 317,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Fault__EstiSensorUp",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 318,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Fault__TempFusoUp",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 319,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Fault__TempFusoDw",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 320,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Fault__Ethercat",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 321,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Alerta__Portas",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 328,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Alerta__Porta1",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 329,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Alerta__Porta2",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 330,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Alerta__Porta3",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 331,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Alerta__Porta4",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 332,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Alerta__Porta5",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 333,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Alerta__Porta6",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 334,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Alerta__Porta7",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 335,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Alerta__Porta8",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 336,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Alerta__Porta9",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 337,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Alerta__Porta10",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 338,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Alerta__Porta11",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 339,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Alerta__Porta12",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 340,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Alerta__Forno_Pino",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 341,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Alerta__Forno_CameSensor",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 342,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Alerta__Forno_PFTorna",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 343,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Alerta__Forno_SegCamb",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 344,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Alerta__FornoAquecendo",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 345,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Alerta__Mesa_Forn",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 346,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Alerta__Mesa_Posi",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 347,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Alerta__Camb_Inicio",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 348,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Alerta__Camb_Forno",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 349,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Alerta__Camb_Posi",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 350,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Alerta__Posi_Camb",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 351,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Alerta__Posi_Regu",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 352,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Alerta__Posi_SensorRec",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 353,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Alerta__Posi_SensorAva",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 354,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Alerta__Regu_Camb",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 355,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Alerta__Regu_Posi",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 356,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Alerta__Regu_MesaPosi",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 357,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Alerta__Regu_Pren",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 358,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Alerta__Regu_Esti",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 359,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Alerta__Regu_Bocal",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 360,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Alerta__RampaEmergenciaRele",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 361,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Alerta__RampaEmergencia1",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 362,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Alerta__RampaEmergencia2",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 363,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Alerta__RampaCarenagem",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 364,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Alerta__PFSilo",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 365,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Alerta__PFRampaNivel",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 366,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Alerta__FluxoH2O",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 367,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Alerta__LinhaStop",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 368,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Alerta__SobretorqueRegu",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 369,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Alerta__PressaoComandoDw",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 370,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Alerta__PressaoComandoUp",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 371,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Alerta__PressaoSoproAlta",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 372,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Alerta__PressaoSoproBaixa",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 373,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Alerta__DescarregandoForno",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 374,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Alerta__GraxaNivel",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 383,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Alerta__CambFornSensor",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 384,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Alerta__CambPosiSensor",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 385,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Alerta__EstiSensorUp",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 386,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Alerta__SW_Forn",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 387,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Alerta__SW_Mesa",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 388,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Alerta__SW_Camb",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 389,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Alerta__SW_Posi",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 390,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Alerta__SW_Regu",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 391,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Alerta__SW_Pren",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 392,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Alerta__SW_Esti",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 393,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Alerta__TempFusoUp",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 394,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Alerta__TempFusoDw",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 395,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Alerta__PressaoH2O",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 396,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Alerta__RampaEmergencia3",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 487,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Alerta__SobretorquePrensaAbre",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 488,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Alerta__LinhaDescarrega",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 490,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Fault__Forno_PFnoCorrentao",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 491,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Fault__CPX_Festo",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 492,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Alerta__PF_Travada_Alim",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 493,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Flag__boBotaoComporta",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 494,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Alerta__LinhaComporta",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 495,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Alerta__SiloVazio",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 496,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Alerta__CorrentePrensaCl",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 501,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Alerta__CorrenteFoldPrensa",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 502,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      },
+      {
+        "Name": "Fault__PrensaFechando",
+        "Size": "1",
+        "DataType": "INT16",
+        "Address_1": 504,
+        "AccessRight": "ReadWrite",
+        "GlobalDataType": "INT16"
+      }
+    ]
+  }

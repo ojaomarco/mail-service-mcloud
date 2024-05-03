@@ -115,7 +115,6 @@ class ElasticCustomCLient(Elasticsearch):
             for key in result:
                 
                 if key in variaveis_filtradas:
-                    print(result[key])
                     if result[key] == 1:
                         final_dict[raw_result['@timestamp']] = key
             alerts.append(final_dict)
@@ -129,38 +128,48 @@ class ElasticCustomCLient(Elasticsearch):
         sum_temp_coifa = []
         sum_prod_hora = []
         sum_hora_rodando = []
+        sum_hora_aliment = {'hora':[], 'came':[]}
         for doc in self.get_devices_info_new([device], time_minutes=time_minutes):
             raw_result = doc
             result = raw_result["output"]
             if not first:
                 first_prod_total = self._get_total_prod(result)
-                first = True 
+                first = True
             sum_temp_coifa.append(self._get_temp_coifa(result))
             last_prod_total = self._get_total_prod(result)
             sum_prod_hora.append(self._get_prod_hora(result))
             sum_press_baixa.append(self._get_press_baixa(result))
             sum_press_alta.append(self._get_press_alta(result))
             sum_hora_rodando.append({'Run': raw_result["@timestamp"]})
+            sum_hora_aliment['hora'].append(raw_result["@timestamp"])
+            sum_hora_aliment['came'].append(self._get_aliment_state(result))
         
         try:
+            while (None in sum_temp_coifa) or (None in sum_press_baixa) or (None in sum_press_alta) or (None in sum_prod_hora):
+                sum_temp_coifa.remove(None)
+                sum_press_alta.remove(None)
+                sum_press_baixa.remove(None)
+                sum_prod_hora.remove(None)
+            
             horas_rodando = self._calculate_running_time(sum_hora_rodando)
             avg_temp_coifa = sum(sum_temp_coifa) / len(sum_temp_coifa)
             avg_press_baixa = sum(sum_press_baixa) / len(sum_press_baixa)
             avg_press_alta = sum(sum_press_alta) / len(sum_press_alta)
             prod_total = last_prod_total - first_prod_total
             avg_prod_hora = sum(sum_prod_hora) / len(sum_prod_hora)
+            horas_alimentando = self._calculate_alim_on_time(sum_hora_aliment)
             print(device.name ,last_prod_total, first_prod_total, prod_total)
 
             return ({'horas_rodando':str(horas_rodando), 'avg_prod_hora': avg_prod_hora, 'avg_press_alta':avg_press_alta, 'avg_press_baixa':avg_press_baixa, 'prod_total':prod_total, 'avg_temp_coifa':avg_temp_coifa})
-        except:
-            print('erro ao obter dados do dispositivo')
+        except Exception as e: 
+            print(f'Erro ao obter dados do dispositivo ', device.name)
   
     def _get_total_prod(self, result):
         string = "Total"
         variaveis_filtradas = [var for var in result.keys() if re.search(f".*{string}.*", var)]
         for key in result:
             if key in variaveis_filtradas:
-                return result[key]
+                return result[key] 
 
     def _get_press_baixa(self, result):
         string = "Baixa"
@@ -168,7 +177,7 @@ class ElasticCustomCLient(Elasticsearch):
         variaveis_filtradas = [var for var in result.keys() if re.search(f".*{string1}.*", var) and re.search(f".*{string}.*", var)]
         for key in result:
             if key in variaveis_filtradas:
-                return result[key]
+                return result[key] 
 
     def _get_press_alta(self, result):
         string = "Alta"
@@ -176,7 +185,7 @@ class ElasticCustomCLient(Elasticsearch):
         variaveis_filtradas = [var for var in result.keys() if re.search(f".*{string1}.*", var) and re.search(f".*{string}.*", var)]
         for key in result:
             if key in variaveis_filtradas:
-                return result[key]
+                return result[key] 
             
     def _get_temp_coifa(self, result):
         string = "Coifa"
@@ -184,15 +193,15 @@ class ElasticCustomCLient(Elasticsearch):
         variaveis_filtradas = [var for var in result.keys() if re.search(f".*{string1}.*", var) and re.search(f".*{string}.*", var)]
         for key in result:
             if key in variaveis_filtradas:
-                return result[key]    
-                
+                return result[key]     
+
     def _get_prod_hora(self, result):
         string = "prod"
         string1 = "hora"
         variaveis_filtradas = [var for var in result.keys() if re.search(f".*{string1}.*", var.lower()) and re.search(f".*{string}.*", var.lower())]
         for key in result:
             if key in variaveis_filtradas:
-                return result[key]
+                return result[key] 
 
     def _get_boot_ok(self, result):
         string = "boot"
@@ -204,9 +213,26 @@ class ElasticCustomCLient(Elasticsearch):
     def _calculate_running_time(self, registers):
         df = pd.DataFrame(registers)
         df['Run'] = pd.to_datetime(df['Run'])
-       
         if not df.empty:
             df['tempo_entre_registros'] = df['Run'].diff()
+            off_limit = pd.Timedelta(minutes=60)
+            on_registers = df[df['tempo_entre_registros'] <= off_limit]
+            running_time = on_registers['tempo_entre_registros'].sum()
+            return running_time
+
+    def _get_aliment_state(self, result):
+        string = "IOs__DO_CameForno"
+        variaveis_filtradas = [var for var in result.keys() if re.search(string, var)] 
+        for key in result:
+            if key in variaveis_filtradas:
+                if result[key]: return result[key] 
+            
+    def _calculate_alim_on_time(self, registers):
+        df = pd.DataFrame(registers)
+        df['hora'] = pd.to_datetime(df['hora'])
+        df = df.dropna()
+        if not df.empty:
+            df['tempo_entre_registros'] = df['hora'].diff()
             off_limit = pd.Timedelta(minutes=60)
             on_registers = df[df['tempo_entre_registros'] <= off_limit]
             running_time = on_registers['tempo_entre_registros'].sum()
@@ -215,33 +241,33 @@ class ElasticCustomCLient(Elasticsearch):
 if __name__ == '__main__':
     http_auth = ('multipet', 'multipet@2022#$')
     teste = {
-    "id": "5579bf4d-beee-4c18-ab15-996faa8743db",
+    "id": "a021acce-0b15-45e6-9924-e904e717748c",
     "alert_count": 0,
-    "name": "10000 LINUX DELRIO",
+    "name": "8000 LW",
     "description": None,
-    "ip": "192.168.0.111",
+    "ip": "192.168.0.101",
     "port": 502,
     "active": True,
     "is_excluded": False,
     "debug_mode": False,
-    "address": "DELRIO",
-    "latitude": "34.47280890",
-    "longitude": "-93.18015960",
+    "address": "Reserva LW",
+    "latitude": "-3.95228810",
+    "longitude": "-38.40721859",
     "config_file": None,
     "status": 0,
     "is_running": 1,
-    "serial_number": "",
+    "serial_number": "025.073.07-23",
     "node": {
-        "id": "6eed7bd4-6505-4576-9b9a-3457bce4a151",
-        "name": "DelRio Linux",
+        "id": "78157890-c189-4beb-97ad-027f1c4821d1",
+        "name": "LW",
         "ip": None,
-        "icinga_id": "6eed7bd4-6505-4576-9b9a-3457bce4a151",
+        "icinga_id": "78157890-c189-4beb-97ad-027f1c4821d1",
         "ticket": None,
-        "token": "ovecloud-zy0Aim50YV",
-        "local_fqdn": "PC-LINUX",
+        "token": "ovecloud-yZvxq8ZZwz",
+        "local_fqdn": "PC-LW",
         "master_fqdn": "icinga2",
         "status": "UP",
-        "last_connection": "22/02/2024 14:33:29",
+        "last_connection": "09/04/2024 09:26:17",
         "auto_scan": False,
         "available_update_variable_maps": False,
         "update_logs": False,
@@ -254,27 +280,25 @@ if __name__ == '__main__':
         },
         "so_type": "LINUX",
         "company": {
-            "id": "2ccc6d34-faa6-47f7-bc92-cfdbcdf3103c",
-            "name": "DelRio Refrigerantes",
-            "cnpj": "07815053000100",
-            "address": None,
+            "id": "933078ee-969e-4705-af7c-a9fc88624c9a",
+            "name": "LW",
+            "cnpj": "63392294000164",
+            "address": "Aquiraz",
             "phone": None,
             "comments": None,
             "staff": False,
             "logo": None,
             "dashboards": [
-                "3d98745b-e712-4801-84ff-a342229b4d95",
-                "a7f5da8f-79c2-494b-a35d-98e6945f956a",
-                "ec7e5f71-09fc-4c2e-9921-30641191d29c"
+                "3d98745b-e712-4801-84ff-a342229b4d95"
             ]
         }
     },
     "model": {
-        "id": "0cdcfd58-9ef8-4f7e-9779-b51a7ae621e7",
-        "name": "Sopradora Multipet 10.000",
-        "image": None
+        "id": "146536dd-ac7e-412a-b590-a0afd8d0e639",
+        "name": "Sopradora Multipet 8.000",
+        "image": "http://multipetcloud.com.br/media/images/8000.JPG"
     }
-    }
+}
     es = ElasticCustomCLient(['http://167.114.191.57:9200'], http_auth=http_auth)
-    print(es.get_info_values(teste, 1440))
+    es.get_info_values(teste, 1440)
    

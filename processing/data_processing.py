@@ -44,7 +44,6 @@ class Processer():
             df['diff'] = df['opened_at'].diff()
             df.reset_index(drop=True, inplace=True)
             rows_to_remove = []
-
             for i in range(1, len(df)):
                 if df.iloc[i]['name'] == df.iloc[i - 1]['name']:
                     if df.iloc[i]['diff'] < pd.Timedelta(minutes=15):

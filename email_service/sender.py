@@ -28,7 +28,7 @@ class Sender():
                         html = Sender._email_builder_active(user['name'], data['serial_number'], data['status'], data['is_running'], data['info_data'], data['issues'])
                         logging.info(f'[{k}] Dados para envio do email obtidos com sucesso.')
                         
-                        MailClient.send_email( html, [user['email']])
+                        # MailClient.send_email( html, [user['email']])
                 else:
                     # enviar email informando que o sistema ta off solicitando contato
                     if user['email']:
