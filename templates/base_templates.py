@@ -62,7 +62,7 @@ HTML_TEMPLATE2 = """
 
 
 HTML_TEMPLATE = """
-   <html lang="pt-br" style="margin: 0;padding: 0;box-sizing: border-box;">
+  <html lang="pt-br" style="margin: 0;padding: 0;box-sizing: border-box;">
 
 <head style="margin: 0;padding: 0;box-sizing: border-box;">
    <style>
@@ -96,6 +96,8 @@ HTML_TEMPLATE = """
             <div class="summary" style="margin: 0;padding: 0;box-sizing: border-box;font-size: 18px;margin-top: 10px;">Este é um email automático para informar sobre o status do seu equipamento Multipet com
                 o número de série {serial_number}.</div>
 
+            <div class="summary" style="margin: 0;padding: 0;box-sizing: border-box;font-size: 18px;margin-top: 10px;">Tempo de sopradora ligada nas ultimas 24 horas: {running_time}</div> 
+            <div class="summary" style="margin: 0;padding: 0;box-sizing: border-box;font-size: 18px;margin-top: 10px;">Tempo de sopradora alimentando e produzindo nas ultimas 24 horas: {horas_alimentando}</div>       
             <div class="section-content " style="margin: 0;padding: 0;box-sizing: border-box;font-size: 20px;margin-top: 10px;">
 
                 <div class="comparison " style="margin: 0;padding: 0;box-sizing: border-box;">Dados referentes as últimas 24 horas.</div>
@@ -111,23 +113,15 @@ HTML_TEMPLATE = """
                     <div class="text-card" style="margin: 0;padding: 0;box-sizing: border-box;font-size: 16px;text-align: center;">Velocidade Média de Produção (G/h)</div>
                 </div>
             </div>
+            
             <div class="section-card" style="margin: 0;padding: 0;box-sizing: border-box;display: flex;align-items: baseline;justify-content: center;">
-                <div class="card" style="margin: 2px;padding: 5px;box-sizing: border-box;width: 50%;background-color: #3f5b81;border-radius: 2%;">
-                    <div class="big-number" style="margin: 0;padding: 0;box-sizing: border-box;text-align: center;font-size: 72px;font-weight: 500;">{press_baixa}</div> 
-                    <div class="text-card" style="margin: 0;padding: 0;box-sizing: border-box;font-size: 16px;text-align: center;">Pressão Média Ar de Baixa (Bar)</div>
-                </div>
-                <div class="card" style="margin: 2px;padding: 5px;box-sizing: border-box;width: 50%;background-color: #3f5b81;border-radius: 2%;">
-                    <div class="big-number" style="margin: 0;padding: 0;box-sizing: border-box;text-align: center;font-size: 72px;font-weight: 500;">{press_alta}</div>
-                    <div class="text-card" style="margin: 0;padding: 0;box-sizing: border-box;font-size: 16px;text-align: center;">Pressão Média Ar de Alta (Bar)</div>
-                </div>
-            </div>
-            <div class="section-card" style="margin: 0;padding: 0;box-sizing: border-box;display: flex;align-items: baseline;justify-content: center;">
-                <div class="card" style="margin: 2px;padding: 5px;box-sizing: border-box;width: 50%;background-color: #3f5b81;border-radius: 2%;">
-                    <div class="big-number" style="margin: 0;padding: 0;box-sizing: border-box;text-align: center;font-size: 72px;font-weight: 500;"> {temp_coifa} </div>
-                    <div class="text-card" style="margin: 0;padding: 0;box-sizing: border-box;font-size: 16px;text-align: center;">Temperatura Média Coifa (ºC)</div>
+                <div class="card" style="margin: 2px;padding: 5px;box-sizing: border-box;width: 100%;background-color: #3f5b81;border-radius: 2%;">
+                    <div class="big-number" style="margin: 0;padding: 0;box-sizing: border-box;text-align: center;font-size: 72px;font-weight: 500;">  <img src="{informacoes_grafico}" alt="Gráfico de Pressão" width="500px"> </div>
+                    
                 </div>
             </div>
         </div>
+       
         <div class="section " style="margin: 0;padding: 20px;box-sizing: border-box;background-color: #1c3b5f;">
 
             <div class="section-content section-card section-title" style="margin: 0;padding: 0;box-sizing: border-box;display: flex;align-items: baseline;justify-content: center;margin-top: 10px;font-size: 20px;font-weight: 500;">Tabela de Falhas</div>
@@ -152,6 +146,4 @@ HTML_TEMPLATE = """
 
 </div></body>
 </html>
-
-
 """

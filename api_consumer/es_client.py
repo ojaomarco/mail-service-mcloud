@@ -7,6 +7,7 @@ from elasticsearch import Elasticsearch
 from elasticsearch.helpers import scan
 import json
 import traceback
+import datetime
 
 class obj(object):
     def __init__(self, dict_):
@@ -120,6 +121,19 @@ class ElasticCustomCLient(Elasticsearch):
             alerts.append(final_dict)
         self.group_alerts(alerts)
 
+    @staticmethod
+    def _formatar_tempo_em_horas(tempo):
+        total_segundos = tempo.total_seconds()
+
+         # Calcular as horas e minutos
+        horas = int(total_segundos // 3600)
+        minutos = int((total_segundos % 3600) // 60)
+
+         # Formatando o tempo para mostrar apenas horas e minutos
+        tempo_formatado = "{:02} Horas e {:02} Minutos".format(horas, minutos)
+
+        return tempo_formatado                        
+
     def get_info_values(self, device, time_minutes):
         device = dict2obj(device)
         first = False
@@ -152,16 +166,21 @@ class ElasticCustomCLient(Elasticsearch):
                 sum_prod_hora.remove(None)
             
             horas_rodando = self._calculate_running_time(sum_hora_rodando)
+            horas_rodando =self._formatar_tempo_em_horas(horas_rodando)
             avg_temp_coifa = sum(sum_temp_coifa) / len(sum_temp_coifa)
             avg_press_baixa = sum(sum_press_baixa) / len(sum_press_baixa)
             avg_press_alta = sum(sum_press_alta) / len(sum_press_alta)
             prod_total = last_prod_total - first_prod_total
             avg_prod_hora = sum(sum_prod_hora) / len(sum_prod_hora)
             horas_alimentando = self._calculate_alim_on_time(sum_hora_aliment)
-            print(device.name ,last_prod_total, first_prod_total, prod_total)
+            horas_alimentando =self._formatar_tempo_em_horas(horas_alimentando)
+            informacoes_grafico = self.generate_graphic(sum_press_baixa, sum_hora_aliment['hora'], sum_press_alta)
+            print(device.name ,last_prod_total, first_prod_total, prod_total, horas_rodando, horas_alimentando)
 
-            return ({'horas_rodando':str(horas_rodando), 'avg_prod_hora': avg_prod_hora, 'avg_press_alta':avg_press_alta, 'avg_press_baixa':avg_press_baixa, 'prod_total':prod_total, 'avg_temp_coifa':avg_temp_coifa})
+            return ({'horas_rodando':str(horas_rodando), 'avg_prod_hora': avg_prod_hora, 'avg_press_alta':avg_press_alta, 'avg_press_baixa':avg_press_baixa, 
+                     'prod_total':prod_total, 'avg_temp_coifa':avg_temp_coifa, 'horas_alimentando': horas_alimentando, 'informacoes_grafico': informacoes_grafico})
         except Exception as e: 
+           # print(traceback.print_exception(e))
             print(f'Erro ao obter dados do dispositivo ', device.name)
   
     def _get_total_prod(self, result):
@@ -237,37 +256,73 @@ class ElasticCustomCLient(Elasticsearch):
             on_registers = df[df['tempo_entre_registros'] <= off_limit]
             running_time = on_registers['tempo_entre_registros'].sum()
             return running_time
+        
+    def generate_graphic(self, data_low, time, data_high):
+        hours=[]
+        data_high=[round(x,2) for x in data_high]
+        data_low=[round(x,2) for x in data_low]
+
+        for timestamp in time:
+            dt_obj = datetime.datetime.strptime(timestamp[:19], "%Y-%m-%dT%H:%M:%S")
+            hours_minute = dt_obj.strftime("%H:%M")
+            hours.append(hours_minute)   
+        base={
+            "type": 'line',
+            "data": {
+                "labels": hours,
+                "datasets": [
+                        {
+            "label": 'Pressão baixa',
+            "data": data_low, 
+            "fill": 'false',
+            "borderColor": 'rgb(102, 255, 51)',
+            "background-color": 'rgb(102, 255, 51)'
+                        },
+                        {
+            "label": 'Pressão alta',
+            "data": data_high,
+            "fill": 'false',
+            "borderColor": 'rgb(255, 0, 0)',
+            "background-color": 'rgb(255, 0, 0)'
+                        },
+                            ],
+                    },
+            }
+        
+        url=f"https://quickchart.io/chart?v=2.9.4&c={base}"
+        return url
+
 
 if __name__ == '__main__':
     http_auth = ('multipet', 'multipet@2022#$')
     teste = {
-    "id": "a021acce-0b15-45e6-9924-e904e717748c",
+    "id": "bdec8fd8-e5a6-4390-8333-91b1b40cd7ef",
     "alert_count": 0,
-    "name": "8000 LW",
+    "name": "10000 Lebrinha C",
     "description": None,
     "ip": "192.168.0.101",
     "port": 502,
     "active": True,
     "is_excluded": False,
     "debug_mode": False,
-    "address": "Reserva LW",
-    "latitude": "-3.95228810",
-    "longitude": "-38.40721859",
+    "address": "Chapada",
+    "latitude": "-28.05878290",
+    "longitude": "-53.06574590",
     "config_file": None,
     "status": 0,
     "is_running": 1,
-    "serial_number": "025.073.07-23",
+    "serial_number": "033.016.05-23",
     "node": {
-        "id": "78157890-c189-4beb-97ad-027f1c4821d1",
-        "name": "LW",
+        "id": "909e442f-3cbb-4801-be77-1af5e54b709c",
+        "name": "Lebrinha Chapada",
         "ip": None,
-        "icinga_id": "78157890-c189-4beb-97ad-027f1c4821d1",
+        "icinga_id": "909e442f-3cbb-4801-be77-1af5e54b709c",
         "ticket": None,
-        "token": "ovecloud-yZvxq8ZZwz",
-        "local_fqdn": "PC-LW",
+        "token": "ovecloud-gju3HARVcH",
+        "local_fqdn": "PC-LEB-LINUX",
         "master_fqdn": "icinga2",
         "status": "UP",
-        "last_connection": "09/04/2024 09:26:17",
+        "last_connection": "08/05/2024 08:58:38",
         "auto_scan": False,
         "available_update_variable_maps": False,
         "update_logs": False,
@@ -280,23 +335,27 @@ if __name__ == '__main__':
         },
         "so_type": "LINUX",
         "company": {
-            "id": "933078ee-969e-4705-af7c-a9fc88624c9a",
-            "name": "LW",
-            "cnpj": "63392294000164",
-            "address": "Aquiraz",
+            "id": "56e9e5fa-5d05-4471-9eaa-5b03bc8a80e7",
+            "name": "LEBRINHA",
+            "cnpj": "14926356000165",
+            "address": "CUIABÁ",
             "phone": None,
             "comments": None,
             "staff": False,
             "logo": None,
             "dashboards": [
-                "3d98745b-e712-4801-84ff-a342229b4d95"
+                "3d98745b-e712-4801-84ff-a342229b4d95",
+                "a7f5da8f-79c2-494b-a35d-98e6945f956a",
+                "ec7e5f71-09fc-4c2e-9921-30641191d29c",
+                "63b957d8-78cb-4ef4-9c81-f03b66335fdc",
+                "1209014a-59cc-455f-9f4c-98efa233802c"
             ]
         }
     },
     "model": {
-        "id": "146536dd-ac7e-412a-b590-a0afd8d0e639",
-        "name": "Sopradora Multipet 8.000",
-        "image": "http://multipetcloud.com.br/media/images/8000.JPG"
+        "id": "0cdcfd58-9ef8-4f7e-9779-b51a7ae621e7",
+        "name": "Sopradora Multipet 10.000",
+        "image": None
     }
 }
     es = ElasticCustomCLient(['http://167.114.191.57:9200'], http_auth=http_auth)

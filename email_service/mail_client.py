@@ -29,6 +29,9 @@ class MailClient():
            smtp_server.sendmail(SENDER, recipients, msg.as_string())
         print("Message sent!")
 
+    
+        
+
 
 
 

@@ -1,18 +1,27 @@
 <html lang="pt-br" style="margin: 0;padding: 0;box-sizing: border-box;">
 
 <head style="margin: 0;padding: 0;box-sizing: border-box;">
+   <style>
+.im {{
+    color: inherit !important;
+  }}
+  div > span.im {{
+    color: inherit !important;
+  }}
+  p > span.im {{
+    color: inherit !important;
+  }}</style>
     <meta charset="utf-8">
     <title>MCloud</title>
     <meta name="author" content="MCloud">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">    
 
     <script style="margin: 0;padding: 0;box-sizing: border-box;">
-        $(window).on("load resize ", function () {
+        $(window).on("load resize ", function () {{
             var scrollWidth = $('.tbl-content').width() - $('.tbl-content table').width();
-            $('.tbl-header').css({ 'padding-right': scrollWidth });
-        }).resize();
+            $('.tbl-header').css({{ 'padding-right': scrollWidth }});
+        }}).resize();
     </script>
-    
 </head>
 
 <body style="margin: 0;padding: 0;box-sizing: border-box;font-weight: 300;font-family: system-ui;background-color: #0a1f3c;color: white;">
@@ -23,6 +32,8 @@
             <div class="summary" style="margin: 0;padding: 0;box-sizing: border-box;font-size: 18px;margin-top: 10px;">Este é um email automático para informar sobre o status do seu equipamento Multipet com
                 o número de série {serial_number}.</div>
 
+            <div class="summary" style="margin: 0;padding: 0;box-sizing: border-box;font-size: 18px;margin-top: 10px;">Tempo de sopradora ligada nas ultimas 24 horas: {horas_rodando}</div> 
+            <div class="summary" style="margin: 0;padding: 0;box-sizing: border-box;font-size: 18px;margin-top: 10px;">Tempo de sopradora alimentando e produzindo nas ultimas 24 horas: {horas_rodando}</div>       
             <div class="section-content " style="margin: 0;padding: 0;box-sizing: border-box;font-size: 20px;margin-top: 10px;">
 
                 <div class="comparison " style="margin: 0;padding: 0;box-sizing: border-box;">Dados referentes as últimas 24 horas.</div>
@@ -34,38 +45,15 @@
                     <div class="text-card" style="margin: 0;padding: 0;box-sizing: border-box;font-size: 16px;text-align: center;">Total de Garrafas Produzidas</div>
                 </div>
                 <div class="card" style="margin: 2px;padding: 5px;box-sizing: border-box;width: 50%;background-color: #3f5b81;border-radius: 2%;">
-                    <div class="flex" style="margin: 0;padding: 0;box-sizing: border-box;display: flex;align-items: baseline;justify-content: center;">
-                        <div class="big-number" style="margin: 0;padding: 0;box-sizing: border-box;text-align: center;font-size: 72px;font-weight: 500;">{prod_hora}</div>
-                        <p style="margin: 0;padding: 0;box-sizing: border-box;">G/h</p>
-                    </div>
-                    <div class="text-card" style="margin: 0;padding: 0;box-sizing: border-box;font-size: 16px;text-align: center;">Velocidade Média de Produção</div>
+                    <div class="big-number" style="margin: 0;padding: 0;box-sizing: border-box;text-align: center;font-size: 72px;font-weight: 500;">{prod_hora}</div>
+                    <div class="text-card" style="margin: 0;padding: 0;box-sizing: border-box;font-size: 16px;text-align: center;">Velocidade Média de Produção (G/h)</div>
                 </div>
             </div>
+            
             <div class="section-card" style="margin: 0;padding: 0;box-sizing: border-box;display: flex;align-items: baseline;justify-content: center;">
                 <div class="card" style="margin: 2px;padding: 5px;box-sizing: border-box;width: 50%;background-color: #3f5b81;border-radius: 2%;">
-                    <div class="flex" style="margin: 0;padding: 0;box-sizing: border-box;display: flex;align-items: baseline;justify-content: center;">
-                        <div class="big-number" style="margin: 0;padding: 0;box-sizing: border-box;text-align: center;font-size: 72px;font-weight: 500;">{press_baixa}</div>
-                        <p style="margin: 0;padding: 0;box-sizing: border-box;">Bar</p>
-                    </div>
-                    <div class="text-card" style="margin: 0;padding: 0;box-sizing: border-box;font-size: 16px;text-align: center;">Pressão Média Ar de Baixa</div>
+                    <div class="big-number" style="margin: 0;padding: 0;box-sizing: border-box;text-align: center;font-size: 72px;font-weight: 500;"> <img src="{informacoes_grafico}" alt="Gráfico de pressão" width="500px"></div>
                 </div>
-                <div class="card" style="margin: 2px;padding: 5px;box-sizing: border-box;width: 50%;background-color: #3f5b81;border-radius: 2%;">
-                    <div class="flex" style="margin: 0;padding: 0;box-sizing: border-box;display: flex;align-items: baseline;justify-content: center;">
-                        <div class="big-number" style="margin: 0;padding: 0;box-sizing: border-box;text-align: center;font-size: 72px;font-weight: 500;">{press_alta}</div>
-                        <p style="margin: 0;padding: 0;box-sizing: border-box;">Bar</p>
-                    </div>
-                    <div class="text-card" style="margin: 0;padding: 0;box-sizing: border-box;font-size: 16px;text-align: center;">Pressão Média Ar de Alta</div>
-                </div>
-            </div>
-            <div class="section-card" style="margin: 0;padding: 0;box-sizing: border-box;display: flex;align-items: baseline;justify-content: center;">
-                <div class="card" style="margin: 2px;padding: 5px;box-sizing: border-box;width: 50%;background-color: #3f5b81;border-radius: 2%;">
-                    <div class="flex" style="margin: 0;padding: 0;box-sizing: border-box;display: flex;align-items: baseline;justify-content: center;">
-                        <div class="big-number" style="margin: 0;padding: 0;box-sizing: border-box;text-align: center;font-size: 72px;font-weight: 500;"> {temp_coifa} </div>
-                        <p style="margin: 0;padding: 0;box-sizing: border-box;">ºC</p>
-                    </div>
-                    <div class="text-card" style="margin: 0;padding: 0;box-sizing: border-box;font-size: 16px;text-align: center;">Temperatura Média Coifa</div>
-                </div>
-
             </div>
         </div>
         <div class="section " style="margin: 0;padding: 20px;box-sizing: border-box;background-color: #1c3b5f;">

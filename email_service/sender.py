@@ -2,6 +2,7 @@ import logging
 import sys
 import os
 import argparse
+import time
 import pandas as pd
 from processing.data_processing import Processer
 from email_service.mail_client import MailClient
@@ -23,15 +24,17 @@ class Sender():
         for k, data in devices_info.items():
             for user in data['users']:
                 if data['info_data']:
+                    print(data['info_data'])
                     # enviar email com status das ultimas 24 horas
                     if user['email']:
                         html = Sender._email_builder_active(user['name'], data['serial_number'], data['status'], data['is_running'], data['info_data'], data['issues'])
                         logging.info(f'[{k}] Dados para envio do email obtidos com sucesso.')
-                        
-                        # MailClient.send_email( html, [user['email']])
+                        time.sleep(10)
+                        MailClient.send_email( html, [user['email']])
                 else:
                     # enviar email informando que o sistema ta off solicitando contato
                     if user['email']:
+                        
                         html = Sender._email_builder_deactivated(user['name'], data['serial_number'], data['status'], data['is_running'])
                         logging.warning(f'[{k}] Dados para envio do email não foram obtidos com sucesso')
         
@@ -43,7 +46,9 @@ class Sender():
             html_table = issues.to_html(index=False,  header=False, border=False)
             html_email = HTML_TEMPLATE.format(user_name=user, status=status, serial_number=serial_number, total_prod=info_data['prod_total'], 
                                            running_time=info_data['horas_rodando'], prod_hora= round(info_data['avg_prod_hora']), press_baixa=round(info_data['avg_press_baixa'],1), 
-                                           press_alta=round(info_data['avg_press_alta'],1), temp_coifa=round(info_data['avg_temp_coifa'],1), issues_table = html_table)
+                                           press_alta=round(info_data['avg_press_alta'],1), temp_coifa=round(info_data['avg_temp_coifa'],1), issues_table = html_table,
+                                             horas_alimentando=info_data['horas_alimentando'], informacoes_grafico=info_data['informacoes_grafico'])
+            #print(html_email)
             return html_email
         except:
             logging.error(f'Erro ao contruir o email do device {serial_number}')
