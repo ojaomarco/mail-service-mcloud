@@ -1,654 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
 
-<body style="margin: 0;padding: 0;box-sizing: border-box;font-weight: 300;font-family: system-ui;background-color: #0a1f3c;color: white;">
-    <div class="container" style="margin: 0 auto;padding: 0;box-sizing: border-box;max-width: 800px;">
-        <div class="section" style="margin: 0;padding: 20px;box-sizing: border-box;background-color: #1c3b5f;">
-            <img src="https://i.upimg.com/0eg6EfQoR" width="200px" style="margin: 0;padding: 0;box-sizing: border-box;">
-            <div class="section-title" style="margin: 0;padding: 0;box-sizing: border-box;margin-top: 15px;font-size: 24px;font-weight: 500;">Olá, João Taylor.</div>
-            <div class="summary" style="margin: 0;padding: 0;box-sizing: border-box;font-size: 18px;margin-top: 10px;">Este é um email automático para informar sobre o status do seu equipamento Multipet com
-                o número de série 025.081.23-23.</div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Status do Equipamento Multipet</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Georgi, sans-serif;
+            background-color: #f2f2f2;
+            color: #333;
+        }
 
-            <div class="summary" style="margin: 0;padding: 0;box-sizing: border-box;font-size: 18px;margin-top: 10px;">Tempo de sopradora ligada nas ultimas 24 horas: 23 Horas e 19 Minutos</div>
-            <div class="summary" style="margin: 0;padding: 0;box-sizing: border-box;font-size: 18px;margin-top: 10px;">Tempo de sopradora alimentando e produzindo nas ultimas 24 horas: 09 Horas e 36 Minutos</div>        
-            <div class="section-content " style="margin: 0;padding: 0;box-sizing: border-box;font-size: 20px;margin-top: 10px;">
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
 
-                <div class="comparison " style="margin: 0;padding: 0;box-sizing: border-box;">Dados referentes as últimas 24 horas.</div>
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
 
-            </div>
-            <div class="section-card" style="margin: 0;padding: 0;box-sizing: border-box;display: flex;align-items: baseline;justify-content: center;">
-                <div class="card" style="margin: 2px;padding: 5px;box-sizing: border-box;width: 50%;background-color: #3f5b81;border-radius: 2%;">
-                    <div class="big-number" style="margin: 0;padding: 0;box-sizing: border-box;text-align: center;font-size: 72px;font-weight: 500;">63980</div>
-                    <div class="text-card" style="margin: 0;padding: 0;box-sizing: border-box;font-size: 16px;text-align: center;">Total de Garrafas Produzidas</div>
-                </div>
-                <div class="card" style="margin: 2px;padding: 5px;box-sizing: border-box;width: 50%;background-color: #3f5b81;border-radius: 2%;">
-                    <div class="big-number" style="margin: 0;padding: 0;box-sizing: border-box;text-align: center;font-size: 72px;font-weight: 500;">4457</div>
-                    <div class="text-card" style="margin: 0;padding: 0;box-sizing: border-box;font-size: 16px;text-align: center;">Velocidade Média de Produção (G/h)</div>
-                </div>
-            </div>
+        .section-card{
+            align-items: baseline;
+            display: flex;
+        }
 
-            <div class="section-card" style="margin: 0;padding: 0;box-sizing: border-box;display: flex;align-items: baseline;justify-content: center;">
-                <div class="card" style="margin: 2px;padding: 5px;box-sizing: border-box;width: 50%;background-color: #3f5b81;border-radius: 2%;">
-                    <div class="big-number" style="margin: 0;padding: 0;box-sizing: border-box;text-align: center;font-size: 72px;font-weight: 500;"> 97.3 </div>
-                    <div class="text-card" style="margin: 0;padding: 0;box-sizing: border-box;font-size: 16px;text-align: center;">Temperatura Média Coifa (ºC)</div>
-                </div>
-            </div>
+        .logo {
+            max-width: 200px;
+            margin-bottom: 20px;
+        }
+
+        .section-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .summary {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .card {
+            background-color: #f2f2f2;
+            padding: 20px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            width: 50%;
+            margin: 2px;
+        }
+
+        .big-number {
+            font-size: 48px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .text-card {
+            font-size: 16px;
+            color: #666;
+        }
+
+        .graph-container {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .graph {
+            max-width: 48%;
+            height: auto;
+        }
+
+        .table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        .table th,
+        .table td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+
+        .table th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: #666;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="https://i.upimg.com/0eg6EfQoR" alt="Logo" class="logo">
+            <h1>Status do Equipamento Multipet</h1>
         </div>
-        <img src="https://quickchart.io/chart?v=2.9.4&c={'type': 'line', 'data': {'labels': ['11:47', '12:00', '12:45', '13:00', '13:30', '14:14', '14:56', '15:00', '15:37', '16:00', '16:46', '17:01', '17:48', '18:00', '18:39', '19:00', '19:30', '20:05', '20:33', '21:18', '21:30', '22:00', '22:31', '23:00', '23:31', '00:00', '00:34', '01:00', '01:30', '02:02', '02:32', '03:01', '03:33', '04:02', '04:30', '05:04', '05:32', '06:01', '06:31', '07:01', '07:32', '08:03', '08:33', '09:04', '09:31', '10:01', '10:35', '11:06'], 'datasets': [{'label': 'Pressão baixa', 'data': [6.04, 6.07, 5.47, 6.19, 5.72, 5.82, 6.04, 5.89, 6.08, 5.97, 5.91, 6.11, 6.0, 6.14, 6.0, 5.47, 5.44, 5.66, 5.46, 5.67, 6.07, 5.97, 5.9, 5.87, 6.05, 6.1, 5.88, 6.16, 6.24, 6.15, 6.27, 5.47, 6.05, 5.67, 6.23, 6.07, 5.85, 5.58, 5.97, 5.54, 5.71, 6.14, 5.71, 6.21, 6.13], 'fill': 'false', 'borderColor': 'rgb(102, 255, 51)', 'background-color': 'rgb(102, 255, 51)'}, {'label': 'Pressão alta', 'data': [29.46, 28.32, 28.56, 29.35, 28.77, 27.44, 29.19, 27.18, 28.65, 29.72, 29.21, 27.78, 29.73, 28.29, 29.48, 28.19, 28.37, 28.98, 28.66, 29.03, 29.99, 29.01, 28.44, 28.5, 27.13, 29.34, 27.93, 29.98, 29.34, 28.6, 28.7, 29.5, 27.88, 29.92, 28.77, 29.52, 28.14, 26.74, 25.49, 27.72, 26.95, 24.24, 27.09, 29.39, 29.54], 'fill': 'false', 'borderColor': 'rgb(255, 0, 0)', 'background-color': 'rgb(255, 0, 0)'}]}}" alt="Gráfico de Pressão" width="500px">
-        <div class="section " style="margin: 0;padding: 20px;box-sizing: border-box;background-color: #1c3b5f;">
+        <div class="section">
+            <h2 class="section-title">Olá, {user_name}.</h2>
+            <p class="summary">Este é um email automático para informar que a sua sopradora possui o sistema de monitoramento remoto Mcloud, porém encontra-se desativado.</p>
+            <p class="summary">Por favor, entre em contato com o suporte da Multipet para ATIVAR o seu dispositivo</p>
+            <p class="summary">Com o sistema em funcionamento, é possivel monitorar o desempenho de sua máquina remotamente e também</p>
+            <p class="summary">Atenciosamente,<br>Equipe Multipet</p>
 
-            <div class="section-content section-card section-title" style="margin: 0;padding: 0;box-sizing: border-box;display: flex;align-items: baseline;justify-content: center;margin-top: 10px;font-size: 20px;font-weight: 500;">Tabela de Falhas</div>
-            <br style="margin: 0;padding: 0;box-sizing: border-box;">
-            <div align="center" style="margin: 0;padding: 0;box-sizing: border-box;">
-                <div class="tbl-header" style="margin: 0;padding: 0;box-sizing: border-box;">
-                    <table cellpadding="0" cellspacing="0" border="0" style="margin: 0;padding: 0;box-sizing: border-box;width: 80%;table-layout: auto;">
-                        <thead style="margin: 0;padding: 0;box-sizing: border-box;background-color: rgba(255, 255, 255, 0.3);">
-                            <tr style="margin: 0;padding: 0;box-sizing: border-box;">
-                                <th style="margin: 0;padding: 10px 5px;box-sizing: border-box;text-align: left;font-weight: 500;font-size: 15px;color: #fff;text-transform: uppercase;">Hora</th>
-                                <th style="margin: 0;padding: 10px 5px;box-sizing: border-box;text-align: left;font-weight: 500;font-size: 15px;color: #fff;text-transform: uppercase;">Descrição</th>
-                            </tr>
-                        </thead>
-                    </table>
-                </div>
-                <div class="tbl-content" style="margin: 0;padding: 0;box-sizing: border-box;height: 300px;overflow-x: auto;">
-                    <table class="dataframe">
-  <tbody>
-    <tr>
-      <td>08/05 11:36</td>
-      <td>Alerta: Torque da prensa acima do limite definido.</td>
-    </tr>
-    <tr>
-      <td>08/05 11:47</td>
-      <td>LinhaDescarrega</td>
-    </tr>
-    <tr>
-      <td>08/05 11:50</td>
-      <td>Alerta: falta de pré-forma na rampa.</td>
-    </tr>
-    <tr>
-      <td>08/05 11:50</td>
-      <td>Alerta: nível baixo de pré-forma na rampa.</td>
-    </tr>
-    <tr>
-      <td>08/05 12:01</td>
-      <td>Alerta: Portas abertas.</td>
-    </tr>
-    <tr>
-      <td>08/05 12:07</td>
-      <td>Alerta: nível baixo de pré-forma na rampa.</td>
-    </tr>
-    <tr>
-      <td>08/05 12:13</td>
-      <td>Alerta: falta de pré-forma na rampa.</td>
-    </tr>
-    <tr>
-      <td>08/05 12:21</td>
-      <td>LinhaDescarrega</td>
-    </tr>
-    <tr>
-      <td>08/05 12:29</td>
-      <td>Alerta: nível baixo de pré-forma na rampa.</td>
-    </tr>
-    <tr>
-      <td>08/05 12:30</td>
-      <td>Alerta: falta de pré-forma na rampa.</td>
-    </tr>
-    <tr>
-      <td>08/05 12:58</td>
-      <td>Alerta: falta de pré-forma na rampa.</td>
-    </tr>
-    <tr>
-      <td>08/05 13:02</td>
-      <td>LinhaDescarrega</td>
-    </tr>
-    <tr>
-      <td>08/05 13:18</td>
-      <td>LinhaDescarrega</td>
-    </tr>
-    <tr>
-      <td>08/05 13:21</td>
-      <td>Alerta: Portas abertas.</td>
-    </tr>
-    <tr>
-      <td>08/05 13:41</td>
-      <td>Alerta: falta de pré-forma na rampa.</td>
-    </tr>
-    <tr>
-      <td>08/05 13:56</td>
-      <td>Alerta: falta de pré-forma na rampa.</td>
-    </tr>
-    <tr>
-      <td>08/05 13:57</td>
-      <td>Alerta: nível baixo de pré-forma na rampa.</td>
-    </tr>
-    <tr>
-      <td>08/05 14:14</td>
-      <td>Alerta: nível baixo de pré-forma na rampa.</td>
-    </tr>
-    <tr>
-      <td>08/05 14:30</td>
-      <td>Alerta: nível baixo de pré-forma na rampa.</td>
-    </tr>
-    <tr>
-      <td>08/05 14:32</td>
-      <td>Alerta: Pré forma travada verifique o alimentador</td>
-    </tr>
-    <tr>
-      <td>08/05 14:37</td>
-      <td>Alerta: falta de pré-forma na rampa.</td>
-    </tr>
-    <tr>
-      <td>08/05 14:46</td>
-      <td>Alerta: Torque da prensa acima do limite definido.</td>
-    </tr>
-    <tr>
-      <td>08/05 14:46</td>
-      <td>Alerta: Falha de segurança na rampa, botão de emergência ou carenagem aberta.</td>
-    </tr>
-    <tr>
-      <td>08/05 15:22</td>
-      <td>LinhaDescarrega</td>
-    </tr>
-    <tr>
-      <td>08/05 15:28</td>
-      <td>Alerta: falta de pré-forma na rampa.</td>
-    </tr>
-    <tr>
-      <td>08/05 15:39</td>
-      <td>Alerta: nível baixo de pré-forma na rampa.</td>
-    </tr>
-    <tr>
-      <td>08/05 15:40</td>
-      <td>Alerta: Pré forma travada verifique o alimentador</td>
-    </tr>
-    <tr>
-      <td>08/05 16:22</td>
-      <td>Alerta: falta de pré-forma na rampa.</td>
-    </tr>
-    <tr>
-      <td>08/05 16:28</td>
-      <td>Alerta: nível baixo de pré-forma na rampa.</td>
-    </tr>
-    <tr>
-      <td>08/05 16:45</td>
-      <td>Alerta: falta de pré-forma na rampa.</td>
-    </tr>
-    <tr>
-      <td>08/05 16:54</td>
-      <td>Alerta: nível baixo de pré-forma na rampa.</td>
-    </tr>
-    <tr>
-      <td>08/05 16:55</td>
-      <td>boZeraFalha</td>
-    </tr>
-    <tr>
-      <td>08/05 16:55</td>
-      <td>Alerta: Torque da prensa acima do limite definido.</td>
-    </tr>
-    <tr>
-      <td>08/05 17:16</td>
-      <td>Alerta: forno Aquecendo.</td>
-    </tr>
-    <tr>
-      <td>08/05 17:24</td>
-      <td>Falha: o sensor do bocal 1 deve estar ligado quando o cilindro está avançado.</td>
-    </tr>
-    <tr>
-      <td>08/05 17:24</td>
-      <td>StatusWord__PosicUp</td>
-    </tr>
-    <tr>
-      <td>08/05 17:24</td>
-      <td>StatusWord__PosicDw</td>
-    </tr>
-    <tr>
-      <td>08/05 17:24</td>
-      <td>Falha: erro no drive do cambotador.</td>
-    </tr>
-    <tr>
-      <td>08/05 17:24</td>
-      <td>Falha: erro no drive da Mesa.</td>
-    </tr>
-    <tr>
-      <td>08/05 17:24</td>
-      <td>StatusWord__Estira</td>
-    </tr>
-    <tr>
-      <td>08/05 17:24</td>
-      <td>Falha: erro no drive do forno.</td>
-    </tr>
-    <tr>
-      <td>08/05 17:24</td>
-      <td>Falha: o sensor do bocal 2 deve estar ligado quando o cilindro está avançado.</td>
-    </tr>
-    <tr>
-      <td>08/05 17:29</td>
-      <td>Falha: colisão entre cambotador e forno, verifique o conjunto.</td>
-    </tr>
-    <tr>
-      <td>08/05 17:29</td>
-      <td>Falha: parada por portas abertas.</td>
-    </tr>
-    <tr>
-      <td>08/05 17:32</td>
-      <td>Alerta: Falha de segurança na rampa, botão de emergência ou carenagem aberta.</td>
-    </tr>
-    <tr>
-      <td>08/05 17:32</td>
-      <td>Falha: parada por relé de fase, verifique a tensão do equipamento.</td>
-    </tr>
-    <tr>
-      <td>08/05 17:32</td>
-      <td>Alerta: emergência da rampa detectada</td>
-    </tr>
-    <tr>
-      <td>08/05 17:32</td>
-      <td>Alerta: Portas abertas.</td>
-    </tr>
-    <tr>
-      <td>08/05 17:33</td>
-      <td>Alerta: sensor da régua desligado com a pinça aberta.</td>
-    </tr>
-    <tr>
-      <td>08/05 17:36</td>
-      <td>Falha: erro no drive do posicionador Superior.</td>
-    </tr>
-    <tr>
-      <td>08/05 17:48</td>
-      <td>Alerta: forno Aquecendo.</td>
-    </tr>
-    <tr>
-      <td>08/05 17:48</td>
-      <td>Alerta: Torque da prensa acima do limite definido.</td>
-    </tr>
-    <tr>
-      <td>08/05 17:55</td>
-      <td>Alerta: falta de pré-forma na rampa.</td>
-    </tr>
-    <tr>
-      <td>08/05 17:57</td>
-      <td>Alerta: nível baixo de pré-forma na rampa.</td>
-    </tr>
-    <tr>
-      <td>08/05 18:39</td>
-      <td>Alerta: Portas abertas.</td>
-    </tr>
-    <tr>
-      <td>08/05 18:39</td>
-      <td>Alerta: emergência da rampa detectada</td>
-    </tr>
-    <tr>
-      <td>08/05 18:39</td>
-      <td>Alerta: Falha de segurança na rampa, botão de emergência ou carenagem aberta.</td>
-    </tr>
-    <tr>
-      <td>08/05 18:39</td>
-      <td>Falha: parada por relé de fase, verifique a tensão do equipamento.</td>
-    </tr>
-    <tr>
-      <td>08/05 18:40</td>
-      <td>Alerta: forno Aquecendo.</td>
-    </tr>
-    <tr>
-      <td>08/05 18:40</td>
-      <td>Alerta: Torque da prensa acima do limite definido.</td>
-    </tr>
-    <tr>
-      <td>08/05 18:44</td>
-      <td>Alerta: pressão de sopro abaixo do limite definido.</td>
-    </tr>
-    <tr>
-      <td>08/05 18:53</td>
-      <td>Alerta: falta de pré-forma na rampa.</td>
-    </tr>
-    <tr>
-      <td>08/05 19:25</td>
-      <td>Alerta: nível baixo de pré-forma na rampa.</td>
-    </tr>
-    <tr>
-      <td>08/05 19:26</td>
-      <td>Alerta: falta de pré-forma na rampa.</td>
-    </tr>
-    <tr>
-      <td>08/05 19:50</td>
-      <td>Alerta: nível baixo de pré-forma na rampa.</td>
-    </tr>
-    <tr>
-      <td>08/05 20:09</td>
-      <td>Alerta: falta de pré-forma na rampa.</td>
-    </tr>
-    <tr>
-      <td>08/05 20:27</td>
-      <td>Alerta: nível baixo de pré-forma na rampa.</td>
-    </tr>
-    <tr>
-      <td>08/05 20:29</td>
-      <td>LinhaDescarrega</td>
-    </tr>
-    <tr>
-      <td>08/05 20:45</td>
-      <td>Alerta: nível baixo de pré-forma na rampa.</td>
-    </tr>
-    <tr>
-      <td>08/05 20:47</td>
-      <td>Alerta: Falha de segurança na rampa, botão de emergência ou carenagem aberta.</td>
-    </tr>
-    <tr>
-      <td>08/05 20:56</td>
-      <td>LinhaDescarrega</td>
-    </tr>
-    <tr>
-      <td>08/05 21:20</td>
-      <td>LinhaDescarrega</td>
-    </tr>
-    <tr>
-      <td>08/05 21:21</td>
-      <td>Alerta: Pré forma travada verifique o alimentador</td>
-    </tr>
-    <tr>
-      <td>08/05 21:24</td>
-      <td>Alerta: falta de pré-forma na rampa.</td>
-    </tr>
-    <tr>
-      <td>08/05 21:32</td>
-      <td>Alerta: nível baixo de pré-forma na rampa.</td>
-    </tr>
-    <tr>
-      <td>08/05 21:53</td>
-      <td>Alerta: falta de pré-forma na rampa.</td>
-    </tr>
-    <tr>
-      <td>08/05 21:59</td>
-      <td>Alerta: nível baixo de pré-forma na rampa.</td>
-    </tr>
-    <tr>
-      <td>08/05 22:04</td>
-      <td>Alerta: Falha de segurança na rampa, botão de emergência ou carenagem aberta.</td>
-    </tr>
-    <tr>
-      <td>08/05 22:35</td>
-      <td>LinhaDescarrega</td>
-    </tr>
-    <tr>
-      <td>08/05 22:37</td>
-      <td>Alerta: falta de pré-forma na rampa.</td>
-    </tr>
-    <tr>
-      <td>08/05 22:38</td>
-      <td>Alerta: nível baixo de pré-forma na rampa.</td>
-    </tr>
-    <tr>
-      <td>08/05 22:43</td>
-      <td>Alerta: Portas abertas.</td>
-    </tr>
-    <tr>
-      <td>08/05 23:20</td>
-      <td>Falha: erro no drive do forno.</td>
-    </tr>
-    <tr>
-      <td>08/05 23:20</td>
-      <td>StatusWord__PosicUp</td>
-    </tr>
-    <tr>
-      <td>08/05 23:20</td>
-      <td>Falha: erro no drive da Mesa.</td>
-    </tr>
-    <tr>
-      <td>08/05 23:20</td>
-      <td>Falha: erro no drive do cambotador.</td>
-    </tr>
-    <tr>
-      <td>08/05 23:20</td>
-      <td>StatusWord__PosicDw</td>
-    </tr>
-    <tr>
-      <td>08/05 23:20</td>
-      <td>StatusWord__Estira</td>
-    </tr>
-    <tr>
-      <td>08/05 23:20</td>
-      <td>Falha: o sensor do bocal 3 deve estar ligado quando o cilindro está avançado.</td>
-    </tr>
-    <tr>
-      <td>08/05 23:22</td>
-      <td>Alerta: emergência da rampa detectada</td>
-    </tr>
-    <tr>
-      <td>08/05 23:22</td>
-      <td>Alerta: Falha de segurança na rampa, botão de emergência ou carenagem aberta.</td>
-    </tr>
-    <tr>
-      <td>08/05 23:22</td>
-      <td>Falha: parada por relé de fase, verifique a tensão do equipamento.</td>
-    </tr>
-    <tr>
-      <td>08/05 23:22</td>
-      <td>Alerta: Portas abertas.</td>
-    </tr>
-    <tr>
-      <td>08/05 23:26</td>
-      <td>Alerta: forno Aquecendo.</td>
-    </tr>
-    <tr>
-      <td>08/05 23:26</td>
-      <td>Alerta: Torque da prensa acima do limite definido.</td>
-    </tr>
-    <tr>
-      <td>08/05 23:31</td>
-      <td>boZeraFalha</td>
-    </tr>
-    <tr>
-      <td>08/05 23:31</td>
-      <td>Falha: colisão entre cambotador e forno, verifique o conjunto.</td>
-    </tr>
-    <tr>
-      <td>08/05 23:41</td>
-      <td>Alerta: falta de pré-forma na rampa.</td>
-    </tr>
-    <tr>
-      <td>08/05 23:42</td>
-      <td>Alerta: nível baixo de pré-forma na rampa.</td>
-    </tr>
-    <tr>
-      <td>09/05 00:31</td>
-      <td>LinhaDescarrega</td>
-    </tr>
-    <tr>
-      <td>09/05 00:56</td>
-      <td>Alerta: nível baixo de pré-forma na rampa.</td>
-    </tr>
-    <tr>
-      <td>09/05 01:01</td>
-      <td>Alerta: falta de pré-forma na rampa.</td>
-    </tr>
-    <tr>
-      <td>09/05 01:02</td>
-      <td>LinhaDescarrega</td>
-    </tr>
-    <tr>
-      <td>09/05 01:24</td>
-      <td>Alerta: falta de pré-forma na rampa.</td>
-    </tr>
-    <tr>
-      <td>09/05 01:57</td>
-      <td>Alerta: falta de pré-forma na rampa.</td>
-    </tr>
-    <tr>
-      <td>09/05 03:27</td>
-      <td>Alerta: falta de pré-forma na rampa.</td>
-    </tr>
-    <tr>
-      <td>09/05 03:27</td>
-      <td>LinhaDescarrega</td>
-    </tr>
-    <tr>
-      <td>09/05 03:38</td>
-      <td>Alerta: nível baixo de pré-forma na rampa.</td>
-    </tr>
-    <tr>
-      <td>09/05 03:53</td>
-      <td>LinhaDescarrega</td>
-    </tr>
-    <tr>
-      <td>09/05 04:13</td>
-      <td>LinhaDescarrega</td>
-    </tr>
-    <tr>
-      <td>09/05 04:46</td>
-      <td>LinhaDescarrega</td>
-    </tr>
-    <tr>
-      <td>09/05 04:50</td>
-      <td>Alerta: falta de pré-forma na rampa.</td>
-    </tr>
-    <tr>
-      <td>09/05 04:51</td>
-      <td>Alerta: nível baixo de pré-forma na rampa.</td>
-    </tr>
-    <tr>
-      <td>09/05 04:52</td>
-      <td>Alerta: Falha de segurança na rampa, botão de emergência ou carenagem aberta.</td>
-    </tr>
-    <tr>
-      <td>09/05 05:26</td>
-      <td>Alerta: falta de pré-forma na rampa.</td>
-    </tr>
-    <tr>
-      <td>09/05 05:28</td>
-      <td>LinhaDescarrega</td>
-    </tr>
-    <tr>
-      <td>09/05 05:30</td>
-      <td>Alerta: Portas abertas.</td>
-    </tr>
-    <tr>
-      <td>09/05 05:47</td>
-      <td>Alerta: falta de pré-forma na rampa.</td>
-    </tr>
-    <tr>
-      <td>09/05 05:49</td>
-      <td>LinhaDescarrega</td>
-    </tr>
-    <tr>
-      <td>09/05 06:07</td>
-      <td>Alerta: nível baixo de pré-forma na rampa.</td>
-    </tr>
-    <tr>
-      <td>09/05 06:23</td>
-      <td>Alerta: falta de pré-forma na rampa.</td>
-    </tr>
-    <tr>
-      <td>09/05 06:30</td>
-      <td>StatusWord__PosicDw</td>
-    </tr>
-    <tr>
-      <td>09/05 06:30</td>
-      <td>Falha: erro no drive da Mesa.</td>
-    </tr>
-    <tr>
-      <td>09/05 06:30</td>
-      <td>Falha: erro no drive do cambotador.</td>
-    </tr>
-    <tr>
-      <td>09/05 06:30</td>
-      <td>Falha: erro no drive do forno.</td>
-    </tr>
-    <tr>
-      <td>09/05 06:30</td>
-      <td>StatusWord__Estira</td>
-    </tr>
-    <tr>
-      <td>09/05 06:30</td>
-      <td>Falha: colisão da posicionador e régua.</td>
-    </tr>
-    <tr>
-      <td>09/05 06:30</td>
-      <td>StatusWord__PosicUp</td>
-    </tr>
-    <tr>
-      <td>09/05 06:31</td>
-      <td>Falha: parada por relé de fase, verifique a tensão do equipamento.</td>
-    </tr>
-    <tr>
-      <td>09/05 06:31</td>
-      <td>Alerta: Portas abertas.</td>
-    </tr>
-    <tr>
-      <td>09/05 06:31</td>
-      <td>Alerta: Falha de segurança na rampa, botão de emergência ou carenagem aberta.</td>
-    </tr>
-    <tr>
-      <td>09/05 06:31</td>
-      <td>Alerta: emergência da rampa detectada</td>
-    </tr>
-    <tr>
-      <td>09/05 07:01</td>
-      <td>Alerta: Falha de segurança na rampa, botão de emergência ou carenagem aberta.</td>
-    </tr>
-    <tr>
-      <td>09/05 07:01</td>
-      <td>Alerta: emergência da rampa detectada</td>
-    </tr>
-    <tr>
-      <td>09/05 07:01</td>
-      <td>Falha: parada por relé de fase, verifique a tensão do equipamento.</td>
-    </tr>
-    <tr>
-      <td>09/05 07:02</td>
-      <td>Alerta: forno Aquecendo.</td>
-    </tr>
-    <tr>
-      <td>09/05 07:02</td>
-      <td>Alerta: Torque da prensa acima do limite definido.</td>
-    </tr>
-    <tr>
-      <td>09/05 07:02</td>
-      <td>LinhaDescarrega</td>
-    </tr>
-    <tr>
-      <td>09/05 07:09</td>
-      <td>Alerta: falta de pré-forma na rampa.</td>
-    </tr>
-    <tr>
-      <td>09/05 07:22</td>
-      <td>Alerta: nível baixo de pré-forma na rampa.</td>
-    </tr>
-    <tr>
-      <td>09/05 07:56</td>
-      <td>Alerta: falta de pré-forma na rampa.</td>
-    </tr>
-    <tr>
-      <td>09/05 08:25</td>
-      <td>Alerta: nível baixo de pré-forma na rampa.</td>
-    </tr>
-    <tr>
-      <td>09/05 08:41</td>
-      <td>Alerta: nível baixo de pré-forma na rampa.</td>
-    </tr>
-    <tr>
-      <td>09/05 08:41</td>
-      <td>Alerta: falta de pré-forma na rampa.</td>
-    </tr>
-    <tr>
-      <td>09/05 09:46</td>
-      <td>Alerta: falta de pré-forma na rampa.</td>
-    </tr>
-    <tr>
-      <td>09/05 09:49</td>
-      <td>Alerta: nível baixo de pré-forma na rampa.</td>
-    </tr>
-    <tr>
-      <td>09/05 09:49</td>
-      <td>Alerta: Pré forma travada verifique o alimentador</td>
-    </tr>
-    <tr>
-      <td>09/05 10:00</td>
-      <td>LinhaDescarrega</td>
-    </tr>
-  </tbody>
-</table>
-                </div>
-
-            </div>
         </div>
+    </div>
+        
+    
+</body>
 
-</div></body>
 </html>
