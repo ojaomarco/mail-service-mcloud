@@ -10,14 +10,26 @@ from config.auth import SENDER, PASSWORD
 
 
 class MailClient:
+
+    def actual_time():
+        now = datetime.now()
+        date_and_time_formatted = now.strftime("%Y-%m-%d %H:%M:%S")
+        return date_and_time_formatted
+
     @staticmethod
-    def send_email(html, recipients, pressure_img_url=None, efficiency_img_url=None):
+    def send_email(
+        html,
+        recipients,
+        pressure_img_url=None,
+        efficiency_img_url=None,
+        running_img_url=None,
+        temperature_img_url=None,
+    ):
         text = "Multipet Sopradoras"
         body = "MCloud"
         subject = f"MCloud Status {datetime.now()}"
 
         msg = MIMEMultipart("alternative")
-        # msg = MIMEText(body)
         msg["Subject"] = subject
         msg["From"] = SENDER
         msg["To"] = ", ".join(recipients)
@@ -25,20 +37,31 @@ class MailClient:
         part1 = MIMEText(text, "plain")
         part2 = MIMEText(html, "html")
 
-        if pressure_img_url and efficiency_img_url:
+        if (
+            pressure_img_url
+            and efficiency_img_url
+            and running_img_url
+            and temperature_img_url
+        ):
             msgImage = MailClient.convert_image_to_bytes(pressure_img_url, "<image1>")
             msgImage2 = MailClient.convert_image_to_bytes(
                 efficiency_img_url, "<image2>"
             )
+            msgImage3 = MailClient.convert_image_to_bytes(running_img_url, "<image3>")
+            msgImage4 = MailClient.convert_image_to_bytes(
+                temperature_img_url, "<image4>"
+            )
             msg.attach(msgImage)
             msg.attach(msgImage2)
+        # msg.attach(msgImage3)
+        # msg.attach(msgImage4)
         msg.attach(part1)
         msg.attach(part2)
 
         with smtplib.SMTP_SSL("smtp.gmail.com", 465) as smtp_server:
             smtp_server.login(SENDER, PASSWORD)
             smtp_server.sendmail(SENDER, recipients, msg.as_string())
-        print("Message sent!")
+        print("Mensagem enviada às", MailClient.actual_time())
 
     @staticmethod
     def convert_image_to_bytes(url, content_id):

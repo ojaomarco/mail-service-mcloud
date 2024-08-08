@@ -24,6 +24,27 @@ class Client:
 
         logging.info("[api_client] All devices requested successfully.")
         return data_list
+    
+    """def get_all_devices(self):
+        logging.info("[api_client] Requesting all devices.")
+        target_device_id = "690afd66-467b-4bad-b8c5-bdcb4c72d746"
+        data_list = []
+        response = requests.get(self.url, auth=AUTH)
+        data = response.json()
+        for x in data["results"]:
+            if x["id"] == target_device_id:
+                # return x
+                data_list.append(x)
+        while data["next"] is not None:
+            response = requests.get(data["next"], auth=AUTH)
+            data = response.json()
+            for x in data["results"]:
+                if x["id"] == target_device_id:
+                    # return x
+                    data_list.append(x)
+
+        logging.info("[api_client] All devices requested successfully.")
+        return data_list"""
 
     def get_all_users(self):
         logging.info("[api_client] Requesting all users.")
@@ -50,5 +71,24 @@ class Client:
         issues_by_device = defaultdict(list)
         for issue in data:
             issues_by_device[issue["device"]].append(issue)
+        logging.info("[api_client] All issues requested successfully.")
+        return issues_by_device
+
+    def get_all_faults(self):
+        logging.info("[api_client] Requesting all issues.")
+        final_time = datetime.now().isoformat()
+        initial_time = (datetime.now() - timedelta(hours=24)).isoformat()
+        response = requests.get(
+            f"{BASE_URL_ISSUE}?time_from={initial_time}Z&time_to={final_time}Z&limit=-1",
+            auth=AUTH,
+        )
+        data = response.json()
+        issues_by_device = defaultdict(list)
+
+        for issue in data:
+            if "Fault" in issue.get("category", ""):
+                issues_by_device[issue["device"]].append(issue)
+                logging.debug(f"Added issue: {issue}")
+
         logging.info("[api_client] All issues requested successfully.")
         return issues_by_device
