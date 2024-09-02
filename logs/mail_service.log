@@ -17945,3 +17945,317 @@
 2024-05-16 09:56:05 INFO [5579bf4d-beee-4c18-ab15-996faa8743db] Dados para envio do email obtidos com sucesso.
 2024-05-16 09:56:11 INFO [bdec8fd8-e5a6-4390-8333-91b1b40cd7ef] Dados para envio do email obtidos com sucesso.
 2024-05-16 09:56:20 WARNING [4cde55e4-81bd-4689-909f-c6c8c68ddec9] Dados para envio do email não foram obtidos com sucesso
+2024-05-16 13:49:16 INFO [api_client] Requesting all devices.
+2024-05-16 13:49:20 INFO [api_client] All devices requested successfully.
+2024-05-16 13:49:20 INFO [api_client] Requesting all users.
+2024-05-16 13:49:25 INFO [api_client] All users requested successfully.
+2024-05-16 13:49:25 INFO [api_client] Requesting all issues.
+2024-05-16 13:49:29 INFO [api_client] All issues requested successfully.
+2024-05-16 13:49:30 INFO POST http://167.114.191.57:9200/_msearch [status:200 duration:0.936s]
+2024-05-16 13:49:31 INFO ['3becdcb2-0e08-41f8-8ee1-c0908685eb75'] Device has all data.
+2024-05-16 13:49:31 INFO POST http://167.114.191.57:9200/_msearch [status:200 duration:0.336s]
+2024-05-16 13:49:31 INFO ['690afd66-467b-4bad-b8c5-bdcb4c72d746'] Device has all data.
+2024-05-16 13:49:32 INFO POST http://167.114.191.57:9200/_msearch [status:200 duration:1.273s]
+2024-05-16 13:49:32 INFO ['a021acce-0b15-45e6-9924-e904e717748c'] Device has all data.
+2024-05-16 13:49:32 INFO POST http://167.114.191.57:9200/_msearch [status:200 duration:0.170s]
+2024-05-16 13:49:33 INFO ['4cde55e4-81bd-4689-909f-c6c8c68ddec9'] Device has all data.
+2024-05-16 13:49:33 INFO POST http://167.114.191.57:9200/_msearch [status:200 duration:0.217s]
+2024-05-16 13:49:33 INFO ['6d0e9a55-a703-4e87-a27f-86433291320d'] Device has all data.
+2024-05-16 13:49:33 INFO POST http://167.114.191.57:9200/_msearch [status:200 duration:0.191s]
+2024-05-16 13:49:33 INFO ['609ed824-3c6f-4d89-9807-4a275fef7fa5'] Device has all data.
+2024-05-16 13:49:34 INFO POST http://167.114.191.57:9200/_msearch [status:200 duration:1.080s]
+2024-05-16 13:49:34 INFO ['3fbabc47-b529-4210-b9f3-b54da820fc30'] Device has all data.
+2024-05-16 13:49:35 INFO POST http://167.114.191.57:9200/_msearch [status:200 duration:0.183s]
+2024-05-16 13:49:35 INFO ['9afcbfb2-40e2-469b-a32e-42d4810b112f'] Device has all data.
+2024-05-16 13:49:35 INFO POST http://167.114.191.57:9200/_msearch [status:200 duration:0.473s]
+2024-05-16 13:49:35 INFO ['bdec8fd8-e5a6-4390-8333-91b1b40cd7ef'] Device has all data.
+2024-05-16 13:49:35 INFO POST http://167.114.191.57:9200/_msearch [status:200 duration:0.176s]
+2024-05-16 13:49:35 INFO ['5579bf4d-beee-4c18-ab15-996faa8743db'] Device has all data.
+2024-05-16 13:49:36 INFO POST http://167.114.191.57:9200/_msearch [status:200 duration:0.191s]
+2024-05-16 13:49:36 INFO ['6d0e9a55-a703-4e87-a27f-86433291320d'] Device has all data.
+2024-05-16 13:49:36 INFO POST http://167.114.191.57:9200/_msearch [status:200 duration:0.513s]
+2024-05-16 13:49:36 INFO ['8fe532d8-0d2b-4a63-b879-6a85d36da7b1'] Device has all data.
+2024-05-16 13:49:37 INFO POST http://167.114.191.57:9200/_msearch [status:200 duration:0.506s]
+2024-05-16 13:49:37 INFO ['91b1f407-9d91-4913-881a-457ad4c86475'] Device has all data.
+2024-05-16 13:49:37 INFO POST http://167.114.191.57:9200/_msearch [status:200 duration:0.374s]
+2024-05-16 13:49:37 INFO ['9afcbfb2-40e2-469b-a32e-42d4810b112f'] Device has all data.
+2024-05-16 13:49:38 INFO POST http://167.114.191.57:9200/_msearch [status:200 duration:0.162s]
+2024-05-16 13:49:38 INFO ['0618a0c1-3149-4bbf-b566-a5d75a17232a'] Device has not all data. Device offline. 0
+2024-05-16 13:49:38 INFO POST http://167.114.191.57:9200/_msearch [status:200 duration:0.155s]
+2024-05-16 13:49:38 INFO ['5fa3361a-f80e-4965-bb27-c074517cb82f'] Device has not all data. Device offline. 0
+2024-05-16 13:49:38 INFO POST http://167.114.191.57:9200/_msearch [status:200 duration:0.160s]
+2024-05-16 13:49:38 INFO ['7256eb75-f438-46dc-b364-93b97aeecd78'] Device has not all data. Device offline. 0
+2024-05-16 13:49:38 INFO POST http://167.114.191.57:9200/_msearch [status:200 duration:0.161s]
+2024-05-16 13:49:38 INFO ['847332d4-134c-41d3-8619-a94093d0b5f6'] Device has not all data. Device offline. 0
+2024-05-16 13:49:38 INFO POST http://167.114.191.57:9200/_msearch [status:200 duration:0.160s]
+2024-05-16 13:49:38 INFO ['c6a16cea-a37b-4918-8d68-595f1f1387bb'] Device has not all data. Device offline. 0
+2024-05-16 13:49:39 INFO POST http://167.114.191.57:9200/_msearch [status:200 duration:0.167s]
+2024-05-16 13:49:39 INFO ['c900f927-4efa-44ea-a5f2-e8304c7672cf'] Device has not all data. Device offline. 2
+2024-05-16 13:49:39 INFO POST http://167.114.191.57:9200/_msearch [status:200 duration:0.157s]
+2024-05-16 13:49:39 INFO ['451f23e9-3227-47fd-939c-154bf4c46366'] Device has not all data. Device offline. 2
+2024-05-16 13:49:39 INFO POST http://167.114.191.57:9200/_msearch [status:200 duration:0.152s]
+2024-05-16 13:49:39 INFO ['819a8c4d-865b-457d-921b-8ddd08e32990'] Device has not all data. Device offline. 2
+2024-05-16 13:49:39 INFO POST http://167.114.191.57:9200/_msearch [status:200 duration:0.174s]
+2024-05-16 13:49:39 INFO ['4ebc52e7-ceb0-4a73-9ce1-dc557c567708'] Device has not all data. Device offline. 2
+2024-05-16 13:49:39 INFO POST http://167.114.191.57:9200/_msearch [status:200 duration:0.157s]
+2024-05-16 13:49:39 INFO ['50beab0e-e3a0-461e-b384-d7be328702e6'] Device has not all data. Device offline. 2
+2024-05-16 13:49:39 INFO POST http://167.114.191.57:9200/_msearch [status:200 duration:0.161s]
+2024-05-16 13:49:39 INFO ['373e898a-48ff-4551-8826-c9fe8a55eaac'] Device has not all data. Device offline. 2
+2024-05-16 13:49:40 INFO POST http://167.114.191.57:9200/_msearch [status:200 duration:0.167s]
+2024-05-16 13:49:40 INFO ['f45c12f0-4969-4415-82cb-da2e6fb3fe8a'] Device has not all data. Device offline. 2
+2024-05-16 13:49:40 INFO POST http://167.114.191.57:9200/_msearch [status:200 duration:0.361s]
+2024-05-16 13:49:40 INFO ['ff0870c4-d127-4c5b-ac9c-e3e1ca166483'] Device has all data.
+2024-05-16 13:49:40 INFO POST http://167.114.191.57:9200/_msearch [status:200 duration:0.154s]
+2024-05-16 13:49:40 INFO ['3816c312-8da4-4b76-8f69-6ca8af3f554d'] Device has not all data. Device offline. 2
+2024-05-16 13:49:40 INFO POST http://167.114.191.57:9200/_msearch [status:200 duration:0.158s]
+2024-05-16 13:49:40 INFO ['e98809ff-6ed0-4742-b051-2ebd18406fbc'] Device has not all data. Device offline. 2
+2024-05-16 13:49:41 INFO POST http://167.114.191.57:9200/_msearch [status:200 duration:0.168s]
+2024-05-16 13:49:41 INFO ['62d4fa49-ac38-4593-a375-e95f4d63c3ac'] Device has not all data. Device offline. 2
+2024-05-16 13:49:41 INFO [3becdcb2-0e08-41f8-8ee1-c0908685eb75] Dados para envio do email obtidos com sucesso.
+2024-05-16 13:49:47 INFO [690afd66-467b-4bad-b8c5-bdcb4c72d746] Dados para envio do email obtidos com sucesso.
+2024-05-16 13:49:53 INFO [a021acce-0b15-45e6-9924-e904e717748c] Dados para envio do email obtidos com sucesso.
+2024-05-16 13:49:59 INFO [4cde55e4-81bd-4689-909f-c6c8c68ddec9] Dados para envio do email obtidos com sucesso.
+2024-05-16 13:50:04 INFO [bdec8fd8-e5a6-4390-8333-91b1b40cd7ef] Dados para envio do email obtidos com sucesso.
+2024-05-16 13:50:10 INFO [5579bf4d-beee-4c18-ab15-996faa8743db] Dados para envio do email obtidos com sucesso.
+2024-05-16 13:50:16 WARNING [7256eb75-f438-46dc-b364-93b97aeecd78] Dados para envio do email não foram obtidos com sucesso
+2024-05-16 13:50:16 WARNING [7256eb75-f438-46dc-b364-93b97aeecd78] Dados para envio do email não foram obtidos com sucesso
+2024-05-16 13:50:16 WARNING [7256eb75-f438-46dc-b364-93b97aeecd78] Dados para envio do email não foram obtidos com sucesso
+2024-05-16 13:50:16 WARNING [373e898a-48ff-4551-8826-c9fe8a55eaac] Dados para envio do email não foram obtidos com sucesso
+2024-05-16 13:50:16 WARNING [373e898a-48ff-4551-8826-c9fe8a55eaac] Dados para envio do email não foram obtidos com sucesso
+2024-05-16 13:50:16 WARNING [373e898a-48ff-4551-8826-c9fe8a55eaac] Dados para envio do email não foram obtidos com sucesso
+2024-05-16 13:50:16 WARNING [3816c312-8da4-4b76-8f69-6ca8af3f554d] Dados para envio do email não foram obtidos com sucesso
+2024-05-16 13:52:44 INFO [api_client] Requesting all devices.
+2024-05-16 13:52:48 INFO [api_client] All devices requested successfully.
+2024-05-16 13:52:48 INFO [api_client] Requesting all users.
+2024-05-16 13:52:52 INFO [api_client] All users requested successfully.
+2024-05-16 13:52:52 INFO [api_client] Requesting all issues.
+2024-05-16 13:52:57 INFO [api_client] All issues requested successfully.
+2024-05-16 13:52:58 INFO POST http://167.114.191.57:9200/_msearch [status:200 duration:1.045s]
+2024-05-16 13:52:58 INFO ['690afd66-467b-4bad-b8c5-bdcb4c72d746'] Device has all data.
+2024-05-16 13:52:58 INFO POST http://167.114.191.57:9200/_msearch [status:200 duration:0.346s]
+2024-05-16 13:52:58 INFO ['609ed824-3c6f-4d89-9807-4a275fef7fa5'] Device has all data.
+2024-05-16 13:52:59 INFO POST http://167.114.191.57:9200/_msearch [status:200 duration:0.159s]
+2024-05-16 13:52:59 INFO ['4cde55e4-81bd-4689-909f-c6c8c68ddec9'] Device has all data.
+2024-05-16 13:52:59 INFO POST http://167.114.191.57:9200/_msearch [status:200 duration:0.175s]
+2024-05-16 13:52:59 INFO ['9afcbfb2-40e2-469b-a32e-42d4810b112f'] Device has all data.
+2024-05-16 13:52:59 INFO POST http://167.114.191.57:9200/_msearch [status:200 duration:0.178s]
+2024-05-16 13:52:59 INFO ['62d4fa49-ac38-4593-a375-e95f4d63c3ac'] Device has all data.
+2024-05-16 13:53:00 INFO POST http://167.114.191.57:9200/_msearch [status:200 duration:0.844s]
+2024-05-16 13:53:00 INFO ['3fbabc47-b529-4210-b9f3-b54da820fc30'] Device has all data.
+2024-05-16 13:53:01 INFO POST http://167.114.191.57:9200/_msearch [status:200 duration:0.574s]
+2024-05-16 13:53:01 INFO ['bdec8fd8-e5a6-4390-8333-91b1b40cd7ef'] Device has all data.
+2024-05-16 13:53:01 INFO POST http://167.114.191.57:9200/_msearch [status:200 duration:0.334s]
+2024-05-16 13:53:01 INFO ['a021acce-0b15-45e6-9924-e904e717748c'] Device has all data.
+2024-05-16 13:53:01 INFO POST http://167.114.191.57:9200/_msearch [status:200 duration:0.178s]
+2024-05-16 13:53:01 INFO ['6d0e9a55-a703-4e87-a27f-86433291320d'] Device has all data.
+2024-05-16 13:53:02 INFO POST http://167.114.191.57:9200/_msearch [status:200 duration:0.374s]
+2024-05-16 13:53:02 INFO ['3becdcb2-0e08-41f8-8ee1-c0908685eb75'] Device has all data.
+2024-05-16 13:53:03 INFO POST http://167.114.191.57:9200/_msearch [status:200 duration:0.746s]
+2024-05-16 13:53:03 INFO ['8fe532d8-0d2b-4a63-b879-6a85d36da7b1'] Device has all data.
+2024-05-16 13:53:03 INFO POST http://167.114.191.57:9200/_msearch [status:200 duration:0.483s]
+2024-05-16 13:53:03 INFO ['3fbabc47-b529-4210-b9f3-b54da820fc30'] Device has all data.
+2024-05-16 13:53:04 INFO POST http://167.114.191.57:9200/_msearch [status:200 duration:0.525s]
+2024-05-16 13:53:04 INFO ['bdec8fd8-e5a6-4390-8333-91b1b40cd7ef'] Device has all data.
+2024-05-16 13:53:04 INFO POST http://167.114.191.57:9200/_msearch [status:200 duration:0.334s]
+2024-05-16 13:53:05 INFO ['a021acce-0b15-45e6-9924-e904e717748c'] Device has all data.
+2024-05-16 13:53:05 INFO POST http://167.114.191.57:9200/_msearch [status:200 duration:0.170s]
+2024-05-16 13:53:05 INFO ['9afcbfb2-40e2-469b-a32e-42d4810b112f'] Device has all data.
+2024-05-16 13:53:05 INFO POST http://167.114.191.57:9200/_msearch [status:200 duration:0.170s]
+2024-05-16 13:53:05 INFO ['847332d4-134c-41d3-8619-a94093d0b5f6'] Device has not all data. Device offline. 0
+2024-05-16 13:53:05 INFO POST http://167.114.191.57:9200/_msearch [status:200 duration:0.157s]
+2024-05-16 13:53:05 INFO ['e98809ff-6ed0-4742-b051-2ebd18406fbc'] Device has not all data. Device offline. 2
+2024-05-16 13:53:05 INFO POST http://167.114.191.57:9200/_msearch [status:200 duration:0.160s]
+2024-05-16 13:53:05 INFO ['0618a0c1-3149-4bbf-b566-a5d75a17232a'] Device has not all data. Device offline. 2
+2024-05-16 13:53:05 INFO POST http://167.114.191.57:9200/_msearch [status:200 duration:0.178s]
+2024-05-16 13:53:05 INFO ['819a8c4d-865b-457d-921b-8ddd08e32990'] Device has not all data. Device offline. 2
+2024-05-16 13:53:06 INFO POST http://167.114.191.57:9200/_msearch [status:200 duration:0.157s]
+2024-05-16 13:53:06 INFO ['f45c12f0-4969-4415-82cb-da2e6fb3fe8a'] Device has not all data. Device offline. 2
+2024-05-16 13:53:06 INFO POST http://167.114.191.57:9200/_msearch [status:200 duration:0.168s]
+2024-05-16 13:53:06 INFO ['373e898a-48ff-4551-8826-c9fe8a55eaac'] Device has not all data. Device offline. 2
+2024-05-16 13:53:06 INFO POST http://167.114.191.57:9200/_msearch [status:200 duration:0.159s]
+2024-05-16 13:53:06 INFO ['c6a16cea-a37b-4918-8d68-595f1f1387bb'] Device has not all data. Device offline. 2
+2024-05-16 13:53:06 INFO POST http://167.114.191.57:9200/_msearch [status:200 duration:0.152s]
+2024-05-16 13:53:06 INFO ['7256eb75-f438-46dc-b364-93b97aeecd78'] Device has not all data. Device offline. 2
+2024-05-16 13:53:06 INFO POST http://167.114.191.57:9200/_msearch [status:200 duration:0.168s]
+2024-05-16 13:53:06 INFO ['451f23e9-3227-47fd-939c-154bf4c46366'] Device has not all data. Device offline. 2
+2024-05-16 13:53:06 INFO POST http://167.114.191.57:9200/_msearch [status:200 duration:0.156s]
+2024-05-16 13:53:06 INFO ['c900f927-4efa-44ea-a5f2-e8304c7672cf'] Device has not all data. Device offline. 2
+2024-05-16 13:53:07 INFO POST http://167.114.191.57:9200/_msearch [status:200 duration:0.176s]
+2024-05-16 13:53:07 INFO ['4ebc52e7-ceb0-4a73-9ce1-dc557c567708'] Device has not all data. Device offline. 2
+2024-05-16 13:53:07 INFO POST http://167.114.191.57:9200/_msearch [status:200 duration:0.164s]
+2024-05-16 13:53:07 INFO ['50beab0e-e3a0-461e-b384-d7be328702e6'] Device has not all data. Device offline. 2
+2024-05-16 13:53:08 INFO POST http://167.114.191.57:9200/_msearch [status:200 duration:0.958s]
+2024-05-16 13:53:08 INFO ['ff0870c4-d127-4c5b-ac9c-e3e1ca166483'] Device has all data.
+2024-05-16 13:53:08 INFO POST http://167.114.191.57:9200/_msearch [status:200 duration:0.251s]
+2024-05-16 13:53:08 INFO ['3816c312-8da4-4b76-8f69-6ca8af3f554d'] Device has not all data. Device offline. 2
+2024-05-16 13:53:08 INFO POST http://167.114.191.57:9200/_msearch [status:200 duration:0.156s]
+2024-05-16 13:53:08 INFO ['5fa3361a-f80e-4965-bb27-c074517cb82f'] Device has not all data. Device offline. 2
+2024-05-16 13:53:08 INFO [690afd66-467b-4bad-b8c5-bdcb4c72d746] Dados para envio do email obtidos com sucesso.
+2024-05-16 13:53:14 INFO [4cde55e4-81bd-4689-909f-c6c8c68ddec9] Dados para envio do email obtidos com sucesso.
+2024-05-16 13:53:19 INFO [bdec8fd8-e5a6-4390-8333-91b1b40cd7ef] Dados para envio do email obtidos com sucesso.
+2024-05-16 13:53:24 INFO [a021acce-0b15-45e6-9924-e904e717748c] Dados para envio do email obtidos com sucesso.
+2024-05-16 13:53:31 INFO [3becdcb2-0e08-41f8-8ee1-c0908685eb75] Dados para envio do email obtidos com sucesso.
+2024-05-16 13:53:38 WARNING [373e898a-48ff-4551-8826-c9fe8a55eaac] Dados para envio do email não foram obtidos com sucesso
+2024-05-16 13:53:38 WARNING [373e898a-48ff-4551-8826-c9fe8a55eaac] Dados para envio do email não foram obtidos com sucesso
+2024-05-16 13:53:38 WARNING [373e898a-48ff-4551-8826-c9fe8a55eaac] Dados para envio do email não foram obtidos com sucesso
+2024-05-16 13:53:38 WARNING [7256eb75-f438-46dc-b364-93b97aeecd78] Dados para envio do email não foram obtidos com sucesso
+2024-05-16 13:53:38 WARNING [7256eb75-f438-46dc-b364-93b97aeecd78] Dados para envio do email não foram obtidos com sucesso
+2024-05-16 13:53:38 WARNING [7256eb75-f438-46dc-b364-93b97aeecd78] Dados para envio do email não foram obtidos com sucesso
+2024-05-16 13:53:38 WARNING [3816c312-8da4-4b76-8f69-6ca8af3f554d] Dados para envio do email não foram obtidos com sucesso
+2024-05-16 13:54:31 INFO [api_client] Requesting all devices.
+2024-05-16 13:54:35 INFO [api_client] All devices requested successfully.
+2024-05-16 13:54:35 INFO [api_client] Requesting all users.
+2024-05-16 13:54:40 INFO [api_client] All users requested successfully.
+2024-05-16 13:54:40 INFO [api_client] Requesting all issues.
+2024-05-16 13:54:45 INFO [api_client] All issues requested successfully.
+2024-05-16 13:54:46 INFO POST http://167.114.191.57:9200/_msearch [status:200 duration:1.047s]
+2024-05-16 13:54:46 INFO ['690afd66-467b-4bad-b8c5-bdcb4c72d746'] Device has all data.
+2024-05-16 13:54:46 INFO POST http://167.114.191.57:9200/_msearch [status:200 duration:0.173s]
+2024-05-16 13:54:46 INFO ['9afcbfb2-40e2-469b-a32e-42d4810b112f'] Device has all data.
+2024-05-16 13:54:46 INFO POST http://167.114.191.57:9200/_msearch [status:200 duration:0.491s]
+2024-05-16 13:54:47 INFO ['bdec8fd8-e5a6-4390-8333-91b1b40cd7ef'] Device has all data.
+2024-05-16 13:54:48 INFO POST http://167.114.191.57:9200/_msearch [status:200 duration:1.246s]
+2024-05-16 13:54:48 INFO ['a021acce-0b15-45e6-9924-e904e717748c'] Device has all data.
+2024-05-16 13:54:48 INFO POST http://167.114.191.57:9200/_msearch [status:200 duration:0.172s]
+2024-05-16 13:54:48 INFO ['6d0e9a55-a703-4e87-a27f-86433291320d'] Device has all data.
+2024-05-16 13:54:48 INFO POST http://167.114.191.57:9200/_msearch [status:200 duration:0.163s]
+2024-05-16 13:54:48 INFO ['62d4fa49-ac38-4593-a375-e95f4d63c3ac'] Device has all data.
+2024-05-16 13:54:49 INFO POST http://167.114.191.57:9200/_msearch [status:200 duration:0.327s]
+2024-05-16 13:54:49 INFO ['3fbabc47-b529-4210-b9f3-b54da820fc30'] Device has all data.
+2024-05-16 13:54:49 INFO POST http://167.114.191.57:9200/_msearch [status:200 duration:0.195s]
+2024-05-16 13:54:49 INFO ['609ed824-3c6f-4d89-9807-4a275fef7fa5'] Device has all data.
+2024-05-16 13:54:49 INFO POST http://167.114.191.57:9200/_msearch [status:200 duration:0.169s]
+2024-05-16 13:54:49 INFO ['4cde55e4-81bd-4689-909f-c6c8c68ddec9'] Device has all data.
+2024-05-16 13:54:50 INFO POST http://167.114.191.57:9200/_msearch [status:200 duration:0.480s]
+2024-05-16 13:54:50 INFO ['3becdcb2-0e08-41f8-8ee1-c0908685eb75'] Device has all data.
+2024-05-16 13:54:50 INFO POST http://167.114.191.57:9200/_msearch [status:200 duration:0.323s]
+2024-05-16 13:54:50 INFO ['3fbabc47-b529-4210-b9f3-b54da820fc30'] Device has all data.
+2024-05-16 13:54:51 INFO POST http://167.114.191.57:9200/_msearch [status:200 duration:0.185s]
+2024-05-16 13:54:51 INFO ['6d0e9a55-a703-4e87-a27f-86433291320d'] Device has all data.
+2024-05-16 13:54:51 INFO POST http://167.114.191.57:9200/_msearch [status:200 duration:0.168s]
+2024-05-16 13:54:51 INFO ['62d4fa49-ac38-4593-a375-e95f4d63c3ac'] Device has all data.
+2024-05-16 13:54:51 INFO POST http://167.114.191.57:9200/_msearch [status:200 duration:0.651s]
+2024-05-16 13:54:52 INFO ['8fe532d8-0d2b-4a63-b879-6a85d36da7b1'] Device has all data.
+2024-05-16 13:54:52 INFO POST http://167.114.191.57:9200/_msearch [status:200 duration:0.197s]
+2024-05-16 13:54:52 INFO ['4cde55e4-81bd-4689-909f-c6c8c68ddec9'] Device has all data.
+2024-05-16 13:54:52 INFO POST http://167.114.191.57:9200/_msearch [status:200 duration:0.176s]
+2024-05-16 13:54:52 INFO ['0618a0c1-3149-4bbf-b566-a5d75a17232a'] Device has not all data. Device offline. 0
+2024-05-16 13:54:52 INFO POST http://167.114.191.57:9200/_msearch [status:200 duration:0.173s]
+2024-05-16 13:54:52 INFO ['c6a16cea-a37b-4918-8d68-595f1f1387bb'] Device has not all data. Device offline. 0
+2024-05-16 13:54:52 INFO POST http://167.114.191.57:9200/_msearch [status:200 duration:0.191s]
+2024-05-16 13:54:52 INFO ['847332d4-134c-41d3-8619-a94093d0b5f6'] Device has not all data. Device offline. 0
+2024-05-16 13:54:53 INFO POST http://167.114.191.57:9200/_msearch [status:200 duration:0.180s]
+2024-05-16 13:54:53 INFO ['7256eb75-f438-46dc-b364-93b97aeecd78'] Device has not all data. Device offline. 2
+2024-05-16 13:54:54 INFO POST http://167.114.191.57:9200/_msearch [status:200 duration:1.576s]
+2024-05-16 13:54:54 INFO ['373e898a-48ff-4551-8826-c9fe8a55eaac'] Device has not all data. Device offline. 2
+2024-05-16 13:54:54 INFO POST http://167.114.191.57:9200/_msearch [status:200 duration:0.189s]
+2024-05-16 13:54:54 INFO ['5fa3361a-f80e-4965-bb27-c074517cb82f'] Device has not all data. Device offline. 2
+2024-05-16 13:54:55 INFO POST http://167.114.191.57:9200/_msearch [status:200 duration:0.214s]
+2024-05-16 13:54:55 INFO ['819a8c4d-865b-457d-921b-8ddd08e32990'] Device has not all data. Device offline. 2
+2024-05-16 13:54:55 INFO POST http://167.114.191.57:9200/_msearch [status:200 duration:0.169s]
+2024-05-16 13:54:55 INFO ['451f23e9-3227-47fd-939c-154bf4c46366'] Device has not all data. Device offline. 2
+2024-05-16 13:54:55 INFO POST http://167.114.191.57:9200/_msearch [status:200 duration:0.179s]
+2024-05-16 13:54:55 INFO ['c900f927-4efa-44ea-a5f2-e8304c7672cf'] Device has not all data. Device offline. 2
+2024-05-16 13:54:55 INFO POST http://167.114.191.57:9200/_msearch [status:200 duration:0.158s]
+2024-05-16 13:54:55 INFO ['f45c12f0-4969-4415-82cb-da2e6fb3fe8a'] Device has not all data. Device offline. 2
+2024-05-16 13:54:55 INFO POST http://167.114.191.57:9200/_msearch [status:200 duration:0.322s]
+2024-05-16 13:54:56 INFO ['4ebc52e7-ceb0-4a73-9ce1-dc557c567708'] Device has not all data. Device offline. 2
+2024-05-16 13:54:56 INFO POST http://167.114.191.57:9200/_msearch [status:200 duration:0.158s]
+2024-05-16 13:54:56 INFO ['50beab0e-e3a0-461e-b384-d7be328702e6'] Device has not all data. Device offline. 2
+2024-05-16 13:54:56 INFO POST http://167.114.191.57:9200/_msearch [status:200 duration:0.749s]
+2024-05-16 13:54:57 INFO ['ff0870c4-d127-4c5b-ac9c-e3e1ca166483'] Device has all data.
+2024-05-16 13:54:57 INFO POST http://167.114.191.57:9200/_msearch [status:200 duration:0.156s]
+2024-05-16 13:54:57 INFO ['3816c312-8da4-4b76-8f69-6ca8af3f554d'] Device has not all data. Device offline. 2
+2024-05-16 13:54:57 INFO POST http://167.114.191.57:9200/_msearch [status:200 duration:0.163s]
+2024-05-16 13:54:57 INFO ['e98809ff-6ed0-4742-b051-2ebd18406fbc'] Device has not all data. Device offline. 2
+2024-05-16 13:54:57 INFO [690afd66-467b-4bad-b8c5-bdcb4c72d746] Dados para envio do email obtidos com sucesso.
+2024-05-16 13:55:02 INFO [bdec8fd8-e5a6-4390-8333-91b1b40cd7ef] Dados para envio do email obtidos com sucesso.
+2024-05-16 13:55:08 INFO [a021acce-0b15-45e6-9924-e904e717748c] Dados para envio do email obtidos com sucesso.
+2024-05-16 13:55:13 INFO [6d0e9a55-a703-4e87-a27f-86433291320d] Dados para envio do email obtidos com sucesso.
+2024-05-16 13:55:20 INFO [4cde55e4-81bd-4689-909f-c6c8c68ddec9] Dados para envio do email obtidos com sucesso.
+2024-05-16 13:55:27 INFO [3becdcb2-0e08-41f8-8ee1-c0908685eb75] Dados para envio do email obtidos com sucesso.
+2024-05-16 13:55:33 WARNING [7256eb75-f438-46dc-b364-93b97aeecd78] Dados para envio do email não foram obtidos com sucesso
+2024-05-16 13:55:33 WARNING [7256eb75-f438-46dc-b364-93b97aeecd78] Dados para envio do email não foram obtidos com sucesso
+2024-05-16 13:55:33 WARNING [7256eb75-f438-46dc-b364-93b97aeecd78] Dados para envio do email não foram obtidos com sucesso
+2024-05-16 13:55:33 WARNING [373e898a-48ff-4551-8826-c9fe8a55eaac] Dados para envio do email não foram obtidos com sucesso
+2024-05-16 13:55:33 WARNING [373e898a-48ff-4551-8826-c9fe8a55eaac] Dados para envio do email não foram obtidos com sucesso
+2024-05-16 13:55:33 WARNING [373e898a-48ff-4551-8826-c9fe8a55eaac] Dados para envio do email não foram obtidos com sucesso
+2024-05-16 13:55:33 WARNING [3816c312-8da4-4b76-8f69-6ca8af3f554d] Dados para envio do email não foram obtidos com sucesso
+2024-05-16 13:59:36 INFO [api_client] Requesting all devices.
+2024-05-16 13:59:41 INFO [api_client] All devices requested successfully.
+2024-05-16 13:59:41 INFO [api_client] Requesting all users.
+2024-05-16 13:59:45 INFO [api_client] All users requested successfully.
+2024-05-16 13:59:45 INFO [api_client] Requesting all issues.
+2024-05-16 13:59:52 INFO [api_client] All issues requested successfully.
+2024-05-16 13:59:53 INFO POST http://167.114.191.57:9200/_msearch [status:200 duration:1.086s]
+2024-05-16 13:59:53 INFO ['07581d3e-2126-4042-aa76-993d7e0f9db2'] Device has all data.
+2024-05-16 13:59:55 INFO POST http://167.114.191.57:9200/_msearch [status:200 duration:1.973s]
+2024-05-16 13:59:55 INFO ['9afcbfb2-40e2-469b-a32e-42d4810b112f'] Device has all data.
+2024-05-16 13:59:59 INFO POST http://167.114.191.57:9200/_msearch [status:200 duration:4.034s]
+2024-05-16 13:59:59 INFO ['a021acce-0b15-45e6-9924-e904e717748c'] Device has all data.
+2024-05-16 13:59:59 INFO POST http://167.114.191.57:9200/_msearch [status:200 duration:0.201s]
+2024-05-16 13:59:59 INFO ['4cde55e4-81bd-4689-909f-c6c8c68ddec9'] Device has all data.
+2024-05-16 14:00:03 INFO POST http://167.114.191.57:9200/_msearch [status:200 duration:3.724s]
+2024-05-16 14:00:03 INFO ['3fbabc47-b529-4210-b9f3-b54da820fc30'] Device has all data.
+2024-05-16 14:00:04 INFO POST http://167.114.191.57:9200/_msearch [status:200 duration:0.603s]
+2024-05-16 14:00:04 INFO ['bdec8fd8-e5a6-4390-8333-91b1b40cd7ef'] Device has all data.
+2024-05-16 14:00:05 INFO POST http://167.114.191.57:9200/_msearch [status:200 duration:0.343s]
+2024-05-16 14:00:05 INFO ['609ed824-3c6f-4d89-9807-4a275fef7fa5'] Device has all data.
+2024-05-16 14:00:05 INFO POST http://167.114.191.57:9200/_msearch [status:200 duration:0.171s]
+2024-05-16 14:00:05 INFO ['62d4fa49-ac38-4593-a375-e95f4d63c3ac'] Device has all data.
+2024-05-16 14:00:05 INFO POST http://167.114.191.57:9200/_msearch [status:200 duration:0.173s]
+2024-05-16 14:00:06 INFO ['6d0e9a55-a703-4e87-a27f-86433291320d'] Device has all data.
+2024-05-16 14:00:06 INFO POST http://167.114.191.57:9200/_msearch [status:200 duration:0.471s]
+2024-05-16 14:00:07 INFO ['690afd66-467b-4bad-b8c5-bdcb4c72d746'] Device has all data.
+2024-05-16 14:00:07 INFO POST http://167.114.191.57:9200/_msearch [status:200 duration:0.343s]
+2024-05-16 14:00:07 INFO ['3fbabc47-b529-4210-b9f3-b54da820fc30'] Device has all data.
+2024-05-16 14:00:07 INFO POST http://167.114.191.57:9200/_msearch [status:200 duration:0.320s]
+2024-05-16 14:00:08 INFO ['9afcbfb2-40e2-469b-a32e-42d4810b112f'] Device has all data.
+2024-05-16 14:00:08 INFO POST http://167.114.191.57:9200/_msearch [status:200 duration:0.750s]
+2024-05-16 14:00:09 INFO ['a021acce-0b15-45e6-9924-e904e717748c'] Device has all data.
+2024-05-16 14:00:09 INFO POST http://167.114.191.57:9200/_msearch [status:200 duration:0.165s]
+2024-05-16 14:00:09 INFO ['62d4fa49-ac38-4593-a375-e95f4d63c3ac'] Device has all data.
+2024-05-16 14:00:10 INFO POST http://167.114.191.57:9200/_msearch [status:200 duration:0.800s]
+2024-05-16 14:00:10 INFO ['8fe532d8-0d2b-4a63-b879-6a85d36da7b1'] Device has all data.
+2024-05-16 14:00:10 INFO POST http://167.114.191.57:9200/_msearch [status:200 duration:0.163s]
+2024-05-16 14:00:10 INFO ['5fa3361a-f80e-4965-bb27-c074517cb82f'] Device has not all data. Device offline. 0
+2024-05-16 14:00:10 INFO POST http://167.114.191.57:9200/_msearch [status:200 duration:0.159s]
+2024-05-16 14:00:10 INFO ['0618a0c1-3149-4bbf-b566-a5d75a17232a'] Device has not all data. Device offline. 0
+2024-05-16 14:00:10 INFO POST http://167.114.191.57:9200/_msearch [status:200 duration:0.162s]
+2024-05-16 14:00:10 INFO ['7256eb75-f438-46dc-b364-93b97aeecd78'] Device has not all data. Device offline. 0
+2024-05-16 14:00:11 INFO POST http://167.114.191.57:9200/_msearch [status:200 duration:0.157s]
+2024-05-16 14:00:11 INFO ['847332d4-134c-41d3-8619-a94093d0b5f6'] Device has not all data. Device offline. 0
+2024-05-16 14:00:11 INFO POST http://167.114.191.57:9200/_msearch [status:200 duration:0.162s]
+2024-05-16 14:00:11 INFO ['c6a16cea-a37b-4918-8d68-595f1f1387bb'] Device has not all data. Device offline. 0
+2024-05-16 14:00:11 INFO POST http://167.114.191.57:9200/_msearch [status:200 duration:0.253s]
+2024-05-16 14:00:11 INFO ['4ebc52e7-ceb0-4a73-9ce1-dc557c567708'] Device has not all data. Device offline. 2
+2024-05-16 14:00:11 INFO POST http://167.114.191.57:9200/_msearch [status:200 duration:0.157s]
+2024-05-16 14:00:11 INFO ['50beab0e-e3a0-461e-b384-d7be328702e6'] Device has not all data. Device offline. 2
+2024-05-16 14:00:11 INFO POST http://167.114.191.57:9200/_msearch [status:200 duration:0.174s]
+2024-05-16 14:00:11 INFO ['c900f927-4efa-44ea-a5f2-e8304c7672cf'] Device has not all data. Device offline. 2
+2024-05-16 14:00:12 INFO POST http://167.114.191.57:9200/_msearch [status:200 duration:0.172s]
+2024-05-16 14:00:12 INFO ['451f23e9-3227-47fd-939c-154bf4c46366'] Device has not all data. Device offline. 2
+2024-05-16 14:00:12 INFO POST http://167.114.191.57:9200/_msearch [status:200 duration:0.177s]
+2024-05-16 14:00:12 INFO ['819a8c4d-865b-457d-921b-8ddd08e32990'] Device has not all data. Device offline. 2
+2024-05-16 14:00:12 INFO POST http://167.114.191.57:9200/_msearch [status:200 duration:0.163s]
+2024-05-16 14:00:12 INFO ['373e898a-48ff-4551-8826-c9fe8a55eaac'] Device has not all data. Device offline. 2
+2024-05-16 14:00:12 INFO POST http://167.114.191.57:9200/_msearch [status:200 duration:0.160s]
+2024-05-16 14:00:12 INFO ['f45c12f0-4969-4415-82cb-da2e6fb3fe8a'] Device has not all data. Device offline. 2
+2024-05-16 14:00:13 INFO POST http://167.114.191.57:9200/_msearch [status:200 duration:0.484s]
+2024-05-16 14:00:13 INFO ['ff0870c4-d127-4c5b-ac9c-e3e1ca166483'] Device has all data.
+2024-05-16 14:00:13 INFO POST http://167.114.191.57:9200/_msearch [status:200 duration:0.158s]
+2024-05-16 14:00:13 INFO ['3816c312-8da4-4b76-8f69-6ca8af3f554d'] Device has not all data. Device offline. 2
+2024-05-16 14:00:13 INFO POST http://167.114.191.57:9200/_msearch [status:200 duration:0.177s]
+2024-05-16 14:00:13 INFO ['e98809ff-6ed0-4742-b051-2ebd18406fbc'] Device has not all data. Device offline. 2
+2024-05-16 14:00:13 INFO [a021acce-0b15-45e6-9924-e904e717748c] Dados para envio do email obtidos com sucesso.
+2024-05-16 14:00:20 INFO [4cde55e4-81bd-4689-909f-c6c8c68ddec9] Dados para envio do email obtidos com sucesso.
+2024-05-16 14:00:26 INFO [bdec8fd8-e5a6-4390-8333-91b1b40cd7ef] Dados para envio do email obtidos com sucesso.
+2024-05-16 14:00:33 INFO [6d0e9a55-a703-4e87-a27f-86433291320d] Dados para envio do email obtidos com sucesso.
+2024-05-16 14:00:40 INFO [690afd66-467b-4bad-b8c5-bdcb4c72d746] Dados para envio do email obtidos com sucesso.
+2024-05-16 14:00:47 WARNING [7256eb75-f438-46dc-b364-93b97aeecd78] Dados para envio do email não foram obtidos com sucesso
+2024-05-16 14:00:47 WARNING [7256eb75-f438-46dc-b364-93b97aeecd78] Dados para envio do email não foram obtidos com sucesso
+2024-05-16 14:00:47 WARNING [7256eb75-f438-46dc-b364-93b97aeecd78] Dados para envio do email não foram obtidos com sucesso
+2024-05-16 14:00:47 WARNING [373e898a-48ff-4551-8826-c9fe8a55eaac] Dados para envio do email não foram obtidos com sucesso
+2024-05-16 14:00:47 WARNING [373e898a-48ff-4551-8826-c9fe8a55eaac] Dados para envio do email não foram obtidos com sucesso
+2024-05-16 14:00:47 WARNING [373e898a-48ff-4551-8826-c9fe8a55eaac] Dados para envio do email não foram obtidos com sucesso
+2024-05-16 14:00:47 WARNING [3816c312-8da4-4b76-8f69-6ca8af3f554d] Dados para envio do email não foram obtidos com sucesso

@@ -80,7 +80,7 @@ class Sender:
                 user_name=user,
                 status=status,
                 serial_number=serial_number,
-                total_prod=info_data["prod_total"],
+                total_prod=round(info_data["prod_total"]),
                 running_time=info_data["horas_rodando"],
                 prod_hora=round(info_data["avg_prod_hora"]),
                 press_baixa=round(info_data["avg_press_baixa"], 1),

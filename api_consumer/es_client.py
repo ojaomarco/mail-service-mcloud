@@ -238,7 +238,7 @@ class ElasticCustomCLient(Elasticsearch):
                 "grafico_eficiencia": grafico_eficiencia,
             }
         except Exception as e:
-            print(traceback.print_exception(e))
+            # print(traceback.print_exception(e))
             print(f"Erro ao obter dados do dispositivo ", device.name)
 
     def _get_total_prod(self, result):
